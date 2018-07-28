@@ -1,0 +1,611 @@
+1
+00:00:00.000 --> 00:00:02.756
+[MÚSICA]
+
+2
+00:00:02.756 --> 00:00:07.748
+Ahora, hasta ahora, realmente no hemos hablado sobre el sistema de coordenadas de nuestro espacio vectorial,
+
+3
+00:00:07.748 --> 00:00:11.150
+las coordenadas en las cuales todos nuestros vectores existen.
+
+4
+00:00:11.150 --> 00:00:13.550
+Pero resulta al hacer esto de proyectar,
+
+5
+00:00:13.550 --> 00:00:18.810
+de tomar el producto de punto, están proyectando nuestro vector en uno que
+
+6
+00:00:18.810 --> 00:00:23.230
+podríamos usar como parte de un nuevo definición del sistema de coordenadas.
+
+7
+00:00:23.230 --> 00:00:26.482
+Entonces en este video veremos qué nos referimos por sistemas de coordenadas y
+
+8
+00:00:26.482 --> 00:00:29.977
+haremos algunos casos de cambio de un sistema de coordenadas a otro.
+
+9
+00:00:29.977 --> 00:00:34.100
+Entonces, recuerda que un vector, como este tipo aquí si solo un objeto que nos lleva
+
+10
+00:00:34.100 --> 00:00:36.230
+desde el origen hasta algún punto en el espacio.
+
+11
+00:00:36.230 --> 00:00:39.506
+Que podría ser un espacio físico o podría ser un espacio de datos,
+
+12
+00:00:39.506 --> 00:00:43.219
+como dormitorios y miles de euros para la casa o algo así.
+
+13
+00:00:43.219 --> 00:00:45.055
+De lo que no hemos hablado
+
+14
+00:00:45.055 --> 00:00:49.300
+lejos realmente es el sistema de coordenadas que utilizamos para describir el espacio.
+
+15
+00:00:49.300 --> 00:00:54.205
+Entonces podríamos usar un sistema de coordenadas definido por estos dos vectores aquí,
+
+16
+00:00:54.205 --> 00:00:58.280
+Les voy a dar nombres, los llamamos yo yj antes,
+
+17
+00:00:58.280 --> 00:01:01.040
+Voy a darles nombres e1 y e2.
+
+18
+00:01:01.040 --> 00:01:03.145
+Voy a definir que sean de longitudes de unidad, por lo
+
+19
+00:01:03.145 --> 00:01:07.738
+Voy a darles un pequeño sombrero, lo que significa que son de longitud de unidad, y
+
+20
+00:01:07.738 --> 00:01:11.380
+Voy a definirlos para ser los vectores 1,0 y 0,1.
+
+21
+00:01:11.380 --> 00:01:16.125
+Y si tuviera más dimensión en mi espacio, Podría tener sombrero e3, sombrero e4
+
+22
+00:01:16.125 --> 00:01:18.600
+e5 sombrero, e 1 millón sombrero, lo que sea.
+
+23
+00:01:18.600 --> 00:01:24.049
+Aquí la instrucción es que r va a ser igual
+
+24
+00:01:24.049 --> 00:01:31.036
+hacer una suma vectorial de 2e1 o 3e1 y luego un cierto número de e2.
+
+25
+00:01:31.036 --> 00:01:35.864
+Así que lo llamaremos a 3e1 sombreros más 4e2 sombreros.
+
+26
+00:01:35.864 --> 00:01:40.820
+Y entonces lo escribiremos como una pequeña lista 3,4.
+
+27
+00:01:40.820 --> 00:01:48.340
+Entonces 3,4 aquí son las instrucciones hacer 3e1 sombreros más 4e2 sombreros.
+
+28
+00:01:48.340 --> 00:01:54.220
+Si lo piensas, mi elección de e1 sombrero y sombrero e2 aquí es algo arbitrario.
+
+29
+00:01:54.220 --> 00:01:55.960
+Depende completamente del camino Configuré las coordenadas.
+
+30
+00:01:55.960 --> 00:01:59.220
+No hay razón por la que no podría tener configurar algún sistema de coordenadas
+
+31
+00:01:59.220 --> 00:02:02.301
+en cierto ángulo a eso, o puedes usar vectores para encontrar el eje
+
+32
+00:02:02.301 --> 00:02:06.240
+que ni siquiera estaban a 90 grados de cada uno otro o fueron de diferentes longitudes.
+
+33
+00:02:06.240 --> 00:02:10.532
+Todavía podría haber descrito r como una suma de algunos vectores que solía definir
+
+34
+00:02:10.532 --> 00:02:11.202
+el espacio.
+
+35
+00:02:13.159 --> 00:02:18.190
+Entonces podría tener, por ejemplo, otro conjunto de vectores b
+
+36
+00:02:21.586 --> 00:02:25.583
+Llamaré a b1 aquí en el vector 2,1, y
+
+37
+00:02:25.583 --> 00:02:31.260
+Podría tener otro vector aquí, b2 como vector -2,4.
+
+38
+00:02:32.439 --> 00:02:36.750
+Y lo he definido en términos de las coordenadas e.
+
+39
+00:02:36.750 --> 00:02:42.796
+Y podría describir r en términos de usted, está usando, esos vectores b1 y b2.
+
+40
+00:02:42.796 --> 00:02:47.150
+Son solo los números en r sería diferente.
+
+41
+00:02:47.150 --> 00:02:51.120
+Entonces, llamamos a los vectores que solíamos definir este espacio, estos chicos e o
+
+42
+00:02:51.120 --> 00:02:54.900
+estos chicos b, los llamamos vectores de base.
+
+43
+00:02:54.900 --> 00:02:59.740
+Entonces los números que he usado para definir r solo tiene algún significado cuando lo sé
+
+44
+00:02:59.740 --> 00:03:01.140
+sobre los vectores de base.
+
+45
+00:03:01.140 --> 00:03:04.446
+Así que r se refirió a estos vectores de base e es 3,4.
+
+46
+00:03:04.446 --> 00:03:10.090
+Pero r se refiere a la base los vectores b también existen.
+
+47
+00:03:12.260 --> 00:03:14.030
+Simplemente no sabemos qué los números están ahí.
+
+48
+00:03:14.030 --> 00:03:16.505
+Entonces esto debería ser algo increíble.
+
+49
+00:03:16.505 --> 00:03:21.284
+r, el vector r, tiene alguna existencia en un profundo tipo de sentido matemático completamente
+
+50
+00:03:21.284 --> 00:03:25.392
+independientemente del sistema de coordenadas utilizamos para describir, los números en
+
+51
+00:03:25.392 --> 00:03:27.265
+la lista que describe r.
+
+52
+00:03:27.265 --> 00:03:28.670
+r, el vector nos lleva desde allí,
+
+53
+00:03:28.670 --> 00:03:33.420
+desde el origen hasta allí todavía existe, independientemente de los números usados ​​en ella.
+
+54
+00:03:33.420 --> 00:03:34.340
+Lo cual es algo ordenado, ¿verdad?
+
+55
+00:03:34.340 --> 00:03:36.340
+Una especie de idea fundamental.
+
+56
+00:03:36.340 --> 00:03:41.125
+Ahora, si los nuevos vectores de base, estos chicos b están a 90 grados el uno del otro,
+
+57
+00:03:41.125 --> 00:03:45.060
+entonces resulta que la proyección producto tiene una buena aplicación.
+
+58
+00:03:45.060 --> 00:03:48.230
+Podemos usar la proyección o producto de punto para averiguar los números de
+
+59
+00:03:48.230 --> 00:03:54.790
+r en la nueva base, b, siempre que saber qué son las b en términos de e.
+
+60
+00:03:54.790 --> 00:03:57.840
+Así que aquí he descrito b1 como 2,1,
+
+61
+00:03:57.840 --> 00:04:02.632
+como e1 más e2 dos veces e1 más 1 e2.
+
+62
+00:04:02.632 --> 00:04:09.016
+Y he descrito b2 como siendo menos 2e1's más 4e2's.
+
+63
+00:04:09.016 --> 00:04:11.936
+Y si sé b en términos de e, Voy a ser capaz de
+
+64
+00:04:11.936 --> 00:04:16.130
+usa el producto de proyección para encontrar r descrito en términos de b.
+
+65
+00:04:16.130 --> 00:04:20.604
+Pero este es un gran si, el b1 y b2 tienen que estar a 90 grados el uno del otro.
+
+66
+00:04:20.604 --> 00:04:25.578
+Si no lo son, terminamos siendo grandes problemas y necesitan matrices para hacer lo que es
+
+67
+00:04:25.578 --> 00:04:30.730
+llamado una transformación de ejes, del e al b conjunto de vectores de base.
+
+68
+00:04:30.730 --> 00:04:34.500
+Veremos matrices más tarde, pero esto nos ayudará mucho por ahora.
+
+69
+00:04:35.580 --> 00:04:38.450
+Usando productos de puntos en esto caso especial donde la nueva base
+
+70
+00:04:38.450 --> 00:04:42.870
+vectores son ortogonales entre sí es computacionalmente mucho más rápido y más fácil.
+
+71
+00:04:42.870 --> 00:04:43.750
+Es solo menos genérico.
+
+72
+00:04:44.940 --> 00:04:47.810
+Pero si puedes organizar el nuevo eje para ser ortogonal debe porque hace
+
+73
+00:04:47.810 --> 00:04:50.010
+los cálculos mucho más rápido y más fácil de hacer
+
+74
+00:04:51.750 --> 00:04:57.400
+Entonces puedes ver que si proyecto r abajo en b1, entonces
+
+75
+00:04:59.650 --> 00:05:05.600
+Miro hacia abajo desde aquí y proyecto hacia abajo a 90 grados obtengo una longitud aquí para
+
+76
+00:05:05.600 --> 00:05:12.670
+producto escalar, y ese escalar proyección es la sombra de r1 a b1.
+
+77
+00:05:12.670 --> 00:05:18.040
+Y el número de la proyección escalar describe cuánto de este vector necesito.
+
+78
+00:05:18.040 --> 00:05:21.800
+Y la proyección vectorial es voy a darme realmente un vector
+
+79
+00:05:21.800 --> 00:05:25.640
+en la dirección de b1 de longitud igual a esa proyección.
+
+80
+00:05:26.640 --> 00:05:31.650
+Ahora si tomo la protección del vector de r en b2 yendo por este camino, estoy
+
+81
+00:05:31.650 --> 00:05:37.140
+va a obtener un vector en la dirección de b2 de longitud igual a esa proyección.
+
+82
+00:05:37.140 --> 00:05:40.310
+Y si hago una suma vectorial de eso
+
+83
+00:05:40.310 --> 00:05:45.960
+proyección de vector más este tipo de proyección de vector, voy a obtener r.
+
+84
+00:05:45.960 --> 00:05:50.430
+Entonces, si puedo hacer esos dos vectores proyecciones, y suman su
+
+85
+00:05:50.430 --> 00:05:56.230
+vector sum, voy a tener nuestro b siendo el números en esas dos proyecciones vectoriales.
+
+86
+00:05:56.230 --> 00:05:59.660
+Y entonces Encontré cómo obtener de r en el conjunto de e
+
+87
+00:05:59.660 --> 00:06:02.370
+vectores de base a la b conjunto de vectores de base.
+
+88
+00:06:02.370 --> 00:06:06.995
+Ahora, ¿cómo puedo verificar que estos dos nuevos los vectores de base están a 90 grados de cada uno
+
+89
+00:06:06.995 --> 00:06:07.517
+¿otro?
+
+90
+00:06:07.517 --> 00:06:09.360
+Bueno, acabo de tomar el producto de puntos.
+
+91
+00:06:09.360 --> 00:06:14.252
+Así que dijimos antes del punto producto cos theta
+
+92
+00:06:14.252 --> 00:06:19.142
+era igual al punto de dos vectores juntos,
+
+93
+00:06:19.142 --> 00:06:23.791
+entonces b1 y b2, divididos por sus longitudes.
+
+94
+00:06:23.791 --> 00:06:26.379
+Entonces, si b1.b2 es 0, entonces coseno theta es 0, y
+
+95
+00:06:26.379 --> 00:06:31.110
+coseno theta es 0 si son 90 grados el uno al otro, si son ortogonales.
+
+96
+00:06:31.110 --> 00:06:34.760
+Así que ni siquiera necesito calcular nada, así que solo calculo el producto de puntos.
+
+97
+00:06:34.760 --> 00:06:38.881
+Entonces b1.b2 aquí, tomo 2 veces menos 2 y
+
+98
+00:06:38.881 --> 00:06:44.530
+Lo agrego a 1 por 4, que es, menos 4 más 4 que es 0.
+
+99
+00:06:44.530 --> 00:06:51.209
+Entonces estos dos vectores están en 90 grados el uno al otro.
+
+100
+00:06:51.209 --> 00:06:54.260
+Entonces va a ser seguro para hacer la proyección
+
+101
+00:06:54.260 --> 00:06:57.170
+Entonces habiéndolo hablado, hagámoslo numéricamente
+
+102
+00:06:58.510 --> 00:07:05.020
+Entonces, si quiero saber qué descrito en la base e,
+
+103
+00:07:05.020 --> 00:07:10.860
+y r es rosada derecha, si tomo r en la base e,
+
+104
+00:07:10.860 --> 00:07:17.210
+y lo voy a marcar con b1,
+
+105
+00:07:17.210 --> 00:07:22.420
+y la proyección del vector se divide por la longitud de b1 al cuadrado.
+
+106
+00:07:22.420 --> 00:07:27.106
+Entonces, e e punteado con b1 va a ser 3
+
+107
+00:07:27.106 --> 00:07:31.949
+veces 2 más 4 veces 1, 4 veces 1,
+
+108
+00:07:31.949 --> 00:07:36.970
+dividido por la longitud de b1 al cuadrado.
+
+109
+00:07:36.970 --> 00:07:40.210
+Así que esa es la suma de los cuadrados de los componentes de b.
+
+110
+00:07:40.210 --> 00:07:42.356
+Entonces eso es 2 cuadrados más 1 cuadrado.
+
+111
+00:07:42.356 --> 00:07:48.430
+Entonces eso me da 6 más 4 es 10, dividido por 5 que es 2.
+
+112
+00:07:48.430 --> 00:07:53.182
+Entonces esta proyección aquí es de longitud 2 veces b1.
+
+113
+00:07:53.182 --> 00:07:56.545
+Entonces esa proyección allí,
+
+114
+00:07:56.545 --> 00:08:01.086
+ese vector va a ser 2 veces b1.
+
+115
+00:08:01.086 --> 00:08:08.503
+Entonces eso es en términos de el conjunto original de vectores e,
+
+116
+00:08:08.503 --> 00:08:15.059
+r_e.b1 sobre b1 al cuadrado multiplicado por b1 es 2 veces
+
+117
+00:08:15.059 --> 00:08:20.590
+el vector 2,1, es el vector 4,2.
+
+118
+00:08:22.290 --> 00:08:24.964
+Y puedo hacerlo entonces esta proyección en e2.
+
+119
+00:08:24.964 --> 00:08:29.504
+Entonces puedo hacer r_e punteado con b2 y
+
+120
+00:08:29.504 --> 00:08:34.918
+dividir por la longitud de b2 al cuadrado,
+
+121
+00:08:34.918 --> 00:08:39.822
+y r_e.b2 es 3 veces menos 2,
+
+122
+00:08:42.167 --> 00:08:43.891
+más 4 veces 4.
+
+123
+00:08:47.134 --> 00:08:53.480
+Dividido por la longitud de b2 al cuadrado, que es -2 al cuadrado más 4 al cuadrado.
+
+124
+00:08:53.480 --> 00:08:58.952
+Entonces eso es 3 veces menos 2 es menos 6 más 4 veces 4 es 16,
+
+125
+00:08:58.952 --> 00:09:02.220
+entonces eso es menos 6, más 16 es 10.
+
+126
+00:09:03.490 --> 00:09:08.391
+Dividido por esta longitud aquí es 4 cuadrado es 16, 2 cuadrado es 4, entonces
+
+127
+00:09:08.391 --> 00:09:10.810
+20, eso es igual a la mitad.
+
+128
+00:09:12.360 --> 00:09:17.900
+Entonces esta proyección vectorial aquí está ese chico veces b2,
+
+129
+00:09:17.900 --> 00:09:25.730
+entonces eso es r_e.b2 sobre el módulo de b2 al cuadrado, esa es mi mitad,
+
+130
+00:09:25.730 --> 00:09:31.455
+veces el vector b2, entonces eso es una mitad veces el vector b2 -2,4.
+
+131
+00:09:32.879 --> 00:09:36.855
+Ahora si agrego esos dos juntos,
+
+132
+00:09:36.855 --> 00:09:42.008
+4,2 este bit, esa proyección vectorial,
+
+133
+00:09:42.008 --> 00:09:46.131
+más esta proyección vectorial, por lo
+
+134
+00:09:46.131 --> 00:09:53.514
+este tipo va a ser la mitad b2 más la mitad -2,4 es -1,2.
+
+135
+00:09:53.514 --> 00:09:57.519
+Si los agrego juntos, tengo 3,4,
+
+136
+00:09:57.519 --> 00:10:03.180
+que es solo mi vector original r, 3,4 en la base e.
+
+137
+00:10:03.180 --> 00:10:08.156
+Entonces, en la base de b1 y b2, r_b va a ser 2
+
+138
+00:10:08.156 --> 00:10:12.540
+la mitad, muy agradable, 2,1 / 2.
+
+139
+00:10:12.540 --> 00:10:16.620
+Así que en realidad en la base b, va a ser 2,1 / 2, allí.
+
+140
+00:10:18.020 --> 00:10:23.390
+Entonces r_b es 2 veces b1 más una mitad de b2, muy agradable.
+
+141
+00:10:23.390 --> 00:10:29.090
+Así que he convertido desde el conjunto de bases e vectores al b conjunto de vectores de base,
+
+142
+00:10:29.090 --> 00:10:32.010
+que es muy limpio, solo usando un par de productos dot.
+
+143
+00:10:33.040 --> 00:10:36.510
+Así que esto es realmente útil, esto es realmente genial.
+
+144
+00:10:36.510 --> 00:10:40.930
+Hemos visto que nuestro vector describir nuestros datos no está atado
+
+145
+00:10:40.930 --> 00:10:45.010
+al eje que originalmente solía describirlo en absoluto.
+
+146
+00:10:45.010 --> 00:10:49.899
+Podemos redescribirlo usando algún otro eje, algunos otros vectores de base.
+
+147
+00:10:51.030 --> 00:10:55.306
+Entonces, los vectores de base que usamos para describir el espacio de datos, y
+
+148
+00:10:55.306 --> 00:10:59.170
+eligiéndolos cuidadosamente a ayúdanos a resolver nuestro problema,
+
+149
+00:10:59.170 --> 00:11:02.265
+será una cosa muy importante en álgebra intermedia, y en general.
+
+150
+00:11:02.265 --> 00:11:06.919
+Y lo que hemos visto es que podemos mover los números en el vector,
+
+151
+00:11:06.919 --> 00:11:11.307
+solíamos describir un elemento de datos de una base a otra.
+
+152
+00:11:11.307 --> 00:11:16.235
+Podemos hacer eso cambiando simplemente tomando el punto o producto de proyección en
+
+153
+00:11:16.235 --> 00:11:21.170
+el caso donde los nuevos factores de base son ortogonales entre sí.

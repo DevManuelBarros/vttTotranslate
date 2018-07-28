@@ -1,0 +1,723 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.756
+[MUSIC]
+
+2
+00:00:02.756 --> 00:00:07.748
+Now, so far we haven't really talked about
+the coordinate system of our vector space,
+
+3
+00:00:07.748 --> 00:00:11.150
+the coordinates in which
+all of our vectors exist.
+
+4
+00:00:11.150 --> 00:00:13.550
+But it turns out in doing
+this thing of projecting,
+
+5
+00:00:13.550 --> 00:00:18.810
+of taking the dot product, we
+are projecting our vector onto one which
+
+6
+00:00:18.810 --> 00:00:23.230
+we might use as part of a new
+definition of the coordinate system.
+
+7
+00:00:23.230 --> 00:00:26.482
+So in this video we'll look at what
+we mean by coordinate systems and
+
+8
+00:00:26.482 --> 00:00:29.977
+we'll do a few cases of changing from
+one coordinate system to another.
+
+9
+00:00:29.977 --> 00:00:34.100
+So, remember that a vector, like this guy
+r here if just an object that takes us
+
+10
+00:00:34.100 --> 00:00:36.230
+from the origin to some point in space.
+
+11
+00:00:36.230 --> 00:00:39.506
+Which could be some physical space or
+it could be some data space,
+
+12
+00:00:39.506 --> 00:00:43.219
+like bedrooms and thousands of Euros for
+the house or something like that.
+
+13
+00:00:43.219 --> 00:00:45.055
+What we haven't talked about so
+
+14
+00:00:45.055 --> 00:00:49.300
+far really is the coordinate system
+that we use to describe space.
+
+15
+00:00:49.300 --> 00:00:54.205
+So we could use a coordinate system
+defined by these two vectors here,
+
+16
+00:00:54.205 --> 00:00:58.280
+I'm going to give them names,
+we called them i and j before,
+
+17
+00:00:58.280 --> 00:01:01.040
+I'm going to give them names e1 and e2.
+
+18
+00:01:01.040 --> 00:01:03.145
+I'm going to define them to be of unit lengths, so
+
+19
+00:01:03.145 --> 00:01:07.738
+I'm going to give them a little hat,
+meaning they're of unit length, and
+
+20
+00:01:07.738 --> 00:01:11.380
+I'm going to define them to
+be the vectors 1,0, and 0,1.
+
+21
+00:01:11.380 --> 00:01:16.125
+And if I had more dimension in my space,
+I could have e3 hat, e4 hat,
+
+22
+00:01:16.125 --> 00:01:18.600
+e5 hat, e 1 million hat, whatever.
+
+23
+00:01:18.600 --> 00:01:24.049
+Here the instruction then is
+that r is going to be equal
+
+24
+00:01:24.049 --> 00:01:31.036
+to doing a vector sum of 2e1 or
+3e1 and then some number of e2.
+
+25
+00:01:31.036 --> 00:01:35.864
+So we'll call it to 3e1
+hats plus 4e2 hats.
+
+26
+00:01:35.864 --> 00:01:40.820
+And so
+we'll write it down as a little list 3,4.
+
+27
+00:01:40.820 --> 00:01:48.340
+So 3,4 here is the instructions
+to do 3e1 hats plus 4e2 hats.
+
+28
+00:01:48.340 --> 00:01:54.220
+If you think about it, my choice of e1
+hat and e2 hat here is kind of arbitrary.
+
+29
+00:01:54.220 --> 00:01:55.960
+It depends entirely on the way
+I set up the coordinates.
+
+30
+00:01:55.960 --> 00:01:59.220
+There's no reason I couldn't have
+set up some co ordinate system
+
+31
+00:01:59.220 --> 00:02:02.301
+at some angle to that, or
+you can use vectors to find the axis
+
+32
+00:02:02.301 --> 00:02:06.240
+that weren't even at 90 degrees to each
+other or were of different lengths.
+
+33
+00:02:06.240 --> 00:02:10.532
+I could still have described r as being
+some sum of some vectors I used to define
+
+34
+00:02:10.532 --> 00:02:11.202
+the space.
+
+35
+00:02:13.159 --> 00:02:18.190
+So I could have, say,
+another set of vectors b
+
+36
+00:02:21.586 --> 00:02:25.583
+I'll call b1 here in the vector 2,1, and
+
+37
+00:02:25.583 --> 00:02:31.260
+I could have another vector here,
+b2 as the vector -2,4.
+
+38
+00:02:32.439 --> 00:02:36.750
+And I've defined it in
+terms of the coordinates e.
+
+39
+00:02:36.750 --> 00:02:42.796
+And I could then describe r in terms of
+you, you're using, those vectors b1 and b2.
+
+40
+00:02:42.796 --> 00:02:47.150
+It's just the numbers in
+r would be different.
+
+41
+00:02:47.150 --> 00:02:51.120
+So, we call the vectors we used to
+define this space, these guys e or
+
+42
+00:02:51.120 --> 00:02:54.900
+these guys b, we call them basis vectors.
+
+43
+00:02:54.900 --> 00:02:59.740
+So the numbers I've used to define r
+only have any meaning when I know
+
+44
+00:02:59.740 --> 00:03:01.140
+about the basis vectors.
+
+45
+00:03:01.140 --> 00:03:04.446
+So r referred to these
+basis vectors e is 3,4.
+
+46
+00:03:04.446 --> 00:03:10.090
+But r referred to the basis
+vectors b also exists.
+
+47
+00:03:12.260 --> 00:03:14.030
+We just don't know what
+the numbers are in there.
+
+48
+00:03:14.030 --> 00:03:16.505
+So this should be kind of amazing.
+
+49
+00:03:16.505 --> 00:03:21.284
+r, the vector r, has some existence in a
+deep sort of mathematical sense completely
+
+50
+00:03:21.284 --> 00:03:25.392
+independently of the coordinate system
+we use to describe, the numbers in
+
+51
+00:03:25.392 --> 00:03:27.265
+the list describing r.
+
+52
+00:03:27.265 --> 00:03:28.670
+r, the vector takes us from there,
+
+53
+00:03:28.670 --> 00:03:33.420
+from the origin to there still exists,
+independently of the numbers used in her.
+
+54
+00:03:33.420 --> 00:03:34.340
+Which is kind of neat, right?
+
+55
+00:03:34.340 --> 00:03:36.340
+Sort of fundamentally, sort of idea.
+
+56
+00:03:36.340 --> 00:03:41.125
+Now, if the new basis vectors, these
+guys b are at 90 degrees to each other,
+
+57
+00:03:41.125 --> 00:03:45.060
+then it turns out the projection
+product has a nice application.
+
+58
+00:03:45.060 --> 00:03:48.230
+We can use the projection or
+dot product to find out the numbers for
+
+59
+00:03:48.230 --> 00:03:54.790
+r in the new basis, b, so long as we
+know what the b's are in terms of e.
+
+60
+00:03:54.790 --> 00:03:57.840
+So here I've described b1 as being 2,1,
+
+61
+00:03:57.840 --> 00:04:02.632
+as being e1 plus e2 twice e1 plus 1 e2.
+
+62
+00:04:02.632 --> 00:04:09.016
+And I've described b2 as
+being minus 2e1's plus 4e2's.
+
+63
+00:04:09.016 --> 00:04:11.936
+And if I know b in terms of e,
+I'm going to be able to
+
+64
+00:04:11.936 --> 00:04:16.130
+use the projection product to find
+r described in terms of the b's.
+
+65
+00:04:16.130 --> 00:04:20.604
+But this is a big if, the b1 and
+b2 have to be at 90 degrees to each other.
+
+66
+00:04:20.604 --> 00:04:25.578
+If they're not, we end up being in big
+trouble and need matrices to do what's
+
+67
+00:04:25.578 --> 00:04:30.730
+called a transformation of axes,
+from the e to the b set of basis vectors.
+
+68
+00:04:30.730 --> 00:04:34.500
+We'll look at matrices later, but
+this will help us out a lot for now.
+
+69
+00:04:35.580 --> 00:04:38.450
+Using dot products in this
+special case where the new basis
+
+70
+00:04:38.450 --> 00:04:42.870
+vectors are orthogonal to each other is
+computationally a lot faster and easier.
+
+71
+00:04:42.870 --> 00:04:43.750
+It's just less generic.
+
+72
+00:04:44.940 --> 00:04:47.810
+But if you can arrange the new axis to be
+orthogonal you should because it makes
+
+73
+00:04:47.810 --> 00:04:50.010
+the computations much faster and
+easier to do.
+
+74
+00:04:51.750 --> 00:04:57.400
+So you can see that if I
+project r down onto b1, so
+
+75
+00:04:59.650 --> 00:05:05.600
+I look down from here and project down
+at 90 degrees I get a length here for
+
+76
+00:05:05.600 --> 00:05:12.670
+scalar product, and that scalar
+projection is the shadow of r1 to b1.
+
+77
+00:05:12.670 --> 00:05:18.040
+And the number of the scalar projection
+describes how much of this vector I need.
+
+78
+00:05:18.040 --> 00:05:21.800
+And the vector projection is
+going to actually give me a vector
+
+79
+00:05:21.800 --> 00:05:25.640
+in the direction of b1 of length
+equal to that projection.
+
+80
+00:05:26.640 --> 00:05:31.650
+Now if I take the vector protection
+of r onto b2 going this way, I'm
+
+81
+00:05:31.650 --> 00:05:37.140
+going to get a vector in the direction of
+b2 of length equal to that projection.
+
+82
+00:05:37.140 --> 00:05:40.310
+And if I do a vector sum of that
+
+83
+00:05:40.310 --> 00:05:45.960
+vector projection plus this guy's
+vector projection, I'll just get r.
+
+84
+00:05:45.960 --> 00:05:50.430
+So if I can do those two vector
+projections, and add up their
+
+85
+00:05:50.430 --> 00:05:56.230
+vector sum, I'll then have our b being the
+numbers in those two vector projections.
+
+86
+00:05:56.230 --> 00:05:59.660
+And so
+I found how to get from r in the e set of
+
+87
+00:05:59.660 --> 00:06:02.370
+basis vectors to the b
+set of basis vectors.
+
+88
+00:06:02.370 --> 00:06:06.995
+Now how do I check that these two new
+basis vectors are at 90 degrees to each
+
+89
+00:06:06.995 --> 00:06:07.517
+other?
+
+90
+00:06:07.517 --> 00:06:09.360
+Well, I just take the dot product.
+
+91
+00:06:09.360 --> 00:06:14.252
+So we said before the dot
+product cos theta
+
+92
+00:06:14.252 --> 00:06:19.142
+was equal to the dot of
+two vectors together,
+
+93
+00:06:19.142 --> 00:06:23.791
+so b1 and b2, divided by their lengths.
+
+94
+00:06:23.791 --> 00:06:26.379
+So if b1.b2 is 0,
+then cosine theta is 0, and
+
+95
+00:06:26.379 --> 00:06:31.110
+cosine theta is 0 if they're 90 degrees
+to each other, if they're orthogonal.
+
+96
+00:06:31.110 --> 00:06:34.760
+So I don't even need to calculate a thing,
+so I just calculate the dot product.
+
+97
+00:06:34.760 --> 00:06:38.881
+So b1.b2 here, I take 2 times minus 2 and
+
+98
+00:06:38.881 --> 00:06:44.530
+I add it to 1 times 4, which is,
+minus 4 plus 4 which is 0.
+
+99
+00:06:44.530 --> 00:06:51.209
+So these two vectors are at
+90 degrees to each other.
+
+100
+00:06:51.209 --> 00:06:54.260
+So it's going to be safe
+to do the projection.
+
+101
+00:06:54.260 --> 00:06:57.170
+So having talked through it,
+let's now do it numerically.
+
+102
+00:06:58.510 --> 00:07:05.020
+So if I want to know what r
+described in the basis e,
+
+103
+00:07:05.020 --> 00:07:10.860
+and r is pink right,
+if I take r in the basis e,
+
+104
+00:07:10.860 --> 00:07:17.210
+and I'm going to dot him with b1,
+
+105
+00:07:17.210 --> 00:07:22.420
+and the vector projection divides
+by the length of b1 squared.
+
+106
+00:07:22.420 --> 00:07:27.106
+So r in e dotted with b1 is going to be 3
+
+107
+00:07:27.106 --> 00:07:31.949
+times 2 plus 4 times 1, 4 times 1,
+
+108
+00:07:31.949 --> 00:07:36.970
+divided by the length of b1 squared.
+
+109
+00:07:36.970 --> 00:07:40.210
+So that's the sum of the squares
+of the components of b.
+
+110
+00:07:40.210 --> 00:07:42.356
+So that's 2 squared plus 1 squared.
+
+111
+00:07:42.356 --> 00:07:48.430
+So that gives me 6 plus 4 is 10,
+divided by 5 which is 2.
+
+112
+00:07:48.430 --> 00:07:53.182
+So this projection here
+is of length 2 times b1.
+
+113
+00:07:53.182 --> 00:07:56.545
+So that projection there,
+
+114
+00:07:56.545 --> 00:08:01.086
+that vector is going to be 2 times b1.
+
+115
+00:08:01.086 --> 00:08:08.503
+So that is in terms of
+the original set of vectors e,
+
+116
+00:08:08.503 --> 00:08:15.059
+r_e.b1 over b1 squared times b1 is 2 times
+
+117
+00:08:15.059 --> 00:08:20.590
+the vector 2,1, is the vector 4,2.
+
+118
+00:08:22.290 --> 00:08:24.964
+And I can do then now
+this projection onto e2.
+
+119
+00:08:24.964 --> 00:08:29.504
+So I can do r_e dotted with b2 and
+
+120
+00:08:29.504 --> 00:08:34.918
+divide by the length of b2 squared,
+
+121
+00:08:34.918 --> 00:08:39.822
+and r_e.b2 is 3 times minus 2,
+
+122
+00:08:42.167 --> 00:08:43.891
+plus 4 times 4.
+
+123
+00:08:47.134 --> 00:08:53.480
+Divided by the length of b2 squared,
+which is -2 squared plus 4 squared.
+
+124
+00:08:53.480 --> 00:08:58.952
+So that's 3 times minus 2 is
+minus 6 plus 4 times 4 is 16,
+
+125
+00:08:58.952 --> 00:09:02.220
+so that's minus 6, plus 16 is 10.
+
+126
+00:09:03.490 --> 00:09:08.391
+Divided by this length here is 4
+squared is 16, 2 squared is 4, so
+
+127
+00:09:08.391 --> 00:09:10.810
+20, so that's equal to a half.
+
+128
+00:09:12.360 --> 00:09:17.900
+So this vector projection
+here is that guy times b2,
+
+129
+00:09:17.900 --> 00:09:25.730
+so that's r_e.b2 over the modulus
+of b2 squared, that's my half,
+
+130
+00:09:25.730 --> 00:09:31.455
+times the vector b2, so that's a half
+times the vector b2 -2,4.
+
+131
+00:09:32.879 --> 00:09:36.855
+Now if I add those two together,
+
+132
+00:09:36.855 --> 00:09:42.008
+4,2 this bit, that vector projection,
+
+133
+00:09:42.008 --> 00:09:46.131
+plus this vector projection, so
+
+134
+00:09:46.131 --> 00:09:53.514
+this guy is going to be half b2
+plus half -2,4 is -1,2.
+
+135
+00:09:53.514 --> 00:09:57.519
+If I add those together, I've got 3,4,
+
+136
+00:09:57.519 --> 00:10:03.180
+which is just my original vector r,
+3,4 in the basis e.
+
+137
+00:10:03.180 --> 00:10:08.156
+So in the basis of b1 and
+b2, r_b is going to be 2
+
+138
+00:10:08.156 --> 00:10:12.540
+one-half, very nice, 2,1/2.
+
+139
+00:10:12.540 --> 00:10:16.620
+So actually in the basis b,
+it's going to be 2,1/2, there.
+
+140
+00:10:18.020 --> 00:10:23.390
+So r_b is 2 times b1 plus
+one-half times b2, very nice.
+
+141
+00:10:23.390 --> 00:10:29.090
+So I've converted from the e set of basis
+vectors to the b set of basis vectors,
+
+142
+00:10:29.090 --> 00:10:32.010
+which is very neat,
+just using a couple of dot products.
+
+143
+00:10:33.040 --> 00:10:36.510
+So this is really handy,
+this is really cool.
+
+144
+00:10:36.510 --> 00:10:40.930
+We've seen that our vector
+describing our data isn't tied
+
+145
+00:10:40.930 --> 00:10:45.010
+to the axis that we originally
+used to describe it at all.
+
+146
+00:10:45.010 --> 00:10:49.899
+We can redescribe it using some other
+axis, some other basis vectors.
+
+147
+00:10:51.030 --> 00:10:55.306
+So the basis vectors we use to
+describe the space of data, and
+
+148
+00:10:55.306 --> 00:10:59.170
+choosing them carefully to
+help us solve our problem,
+
+149
+00:10:59.170 --> 00:11:02.265
+will be a very important thing in
+intermediate algebra, and in general.
+
+150
+00:11:02.265 --> 00:11:06.919
+And what we've seen is we can
+move the numbers in the vector,
+
+151
+00:11:06.919 --> 00:11:11.307
+we used to describe a data item
+from one basis to another.
+
+152
+00:11:11.307 --> 00:11:16.235
+We can do that change just by taking
+the dot or projection product in
+
+153
+00:11:16.235 --> 00:11:21.170
+the case where the new basis factors
+are orthogonal to each other.

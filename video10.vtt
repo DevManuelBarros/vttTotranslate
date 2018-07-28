@@ -1,0 +1,372 @@
+WEBVTT
+
+1
+00:00:00.255 --> 00:00:02.410
+[MUSIC]
+
+2
+00:00:02.410 --> 00:00:05.978
+So back at the start of the course,
+we encountered the apples and
+
+3
+00:00:05.978 --> 00:00:07.530
+bananas problems.
+
+4
+00:00:07.530 --> 00:00:11.640
+How to find the price of things
+when we only have the total bill.
+
+5
+00:00:11.640 --> 00:00:13.450
+And we've looked at vectors so far.
+
+6
+00:00:13.450 --> 00:00:14.854
+And now we're going to look at matrices.
+
+7
+00:00:14.854 --> 00:00:19.020
+And these are objects that rotate and
+stretch vectors.
+
+8
+00:00:19.020 --> 00:00:23.070
+But they're also objects that let
+us solve these sorts of problems.
+
+9
+00:00:23.070 --> 00:00:25.950
+So let's go back to that apples and
+bananas problem.
+
+10
+00:00:25.950 --> 00:00:30.320
+Say I walk into a shop and
+I buy two apples, and three bananas,
+
+11
+00:00:31.490 --> 00:00:35.190
+and that that costs 8 euros.
+
+12
+00:00:36.340 --> 00:00:39.710
+So I'm saying 2 apples,
+3 bananas, cost 8 euros.
+
+13
+00:00:39.710 --> 00:00:46.347
+Now say I go to the shop on another
+day and I buy 10 apples and 1 banana.
+
+14
+00:00:46.347 --> 00:00:49.727
+And that that costs me, or
+the shopkeeper charges me 13 euros.
+
+15
+00:00:52.280 --> 00:00:56.270
+And I want to discover what the price for
+1 apple and 1 banana is, so
+
+16
+00:00:56.270 --> 00:01:00.269
+I can decide which offers better value or
+even just predict my bill.
+
+17
+00:01:00.269 --> 00:01:02.134
+Now you might say this is silly.
+
+18
+00:01:02.134 --> 00:01:04.870
+What shop doesn't have
+sticker prices after all?
+
+19
+00:01:04.870 --> 00:01:08.544
+But actually in business with complicated
+products and service agreements and
+
+20
+00:01:08.544 --> 00:01:12.288
+higher purchase, this sort of thing,
+price discovery, happens all the time.
+
+21
+00:01:12.288 --> 00:01:15.350
+Think about what happens when
+you buy a car for instance.
+
+22
+00:01:15.350 --> 00:01:20.760
+Now these are just simultaneous equations,
+but I can write them down in another way.
+
+23
+00:01:20.760 --> 00:01:28.050
+The way I would write this down
+with matrices would be as follows.
+
+24
+00:01:28.050 --> 00:01:31.301
+So I'd write it down as this matrix,
+what I'm now calling a matrix,
+
+25
+00:01:31.301 --> 00:01:33.163
+an object with numbers in 2 3 10 1.
+
+26
+00:01:35.958 --> 00:01:40.225
+a b, = 8 13.
+
+27
+00:01:40.225 --> 00:01:44.085
+And these things I call matrices.
+
+28
+00:01:44.085 --> 00:01:45.544
+This is a 2 by 2 matrix.
+
+29
+00:01:45.544 --> 00:01:48.469
+This is a 2 row by 1 column matrix.
+
+30
+00:01:48.469 --> 00:01:51.875
+And this is another 2
+row by 1 column matrix.
+
+31
+00:01:51.875 --> 00:01:56.858
+And the instruction here is to multiply
+this out in the following way.
+
+32
+00:01:56.858 --> 00:02:01.018
+So I would multiply the elements in
+the rows by the elements in the column.
+
+33
+00:02:01.018 --> 00:02:07.544
+So I'd multiply 2 by a, plus 3 times b.
+
+34
+00:02:07.544 --> 00:02:09.681
+So that row times that column, and
+
+35
+00:02:09.681 --> 00:02:13.414
+I'd say that equaled the top
+row on the right-hand side.
+
+36
+00:02:13.414 --> 00:02:19.750
+And I do the same for the next row,
+that row times that column is 10a plus 1b,
+
+37
+00:02:19.750 --> 00:02:24.363
+is equal to the row on the bottom
+on the right-hand side.
+
+38
+00:02:24.363 --> 00:02:27.314
+And that looks like my two
+simultaneous equations.
+
+39
+00:02:29.097 --> 00:02:34.284
+But this is really handy, because these
+things, notice, look like vectors.
+
+40
+00:02:34.284 --> 00:02:38.900
+So this matrix operates on this
+vector to give this other vector, and
+
+41
+00:02:38.900 --> 00:02:43.768
+my question is, what vector transforms
+to give me this guy on the right?
+
+42
+00:02:43.768 --> 00:02:48.924
+Now let's look at what
+happens if I multiply this
+
+43
+00:02:48.924 --> 00:02:54.975
+matrix here by the unit basis vector,
+the x axis vector.
+
+44
+00:02:57.180 --> 00:03:02.323
+Well when I do that multiplication,
+I'm going to get 2 times 1 plus 3 times 0.
+
+45
+00:03:02.323 --> 00:03:06.693
+And I'm going to get 10
+times 1 plus 1 times 0.
+
+46
+00:03:06.693 --> 00:03:08.980
+So I get the vector 2 10.
+
+47
+00:03:08.980 --> 00:03:14.224
+So what this does is it takes
+the little unit vector which
+
+48
+00:03:14.224 --> 00:03:19.700
+we called e1 hat, and
+it transforms it to another place.
+
+49
+00:03:23.190 --> 00:03:26.757
+Which is 2 10,
+which is going to be up here somewhere.
+
+50
+00:03:26.757 --> 00:03:33.242
+So that's e1 hat, changed,
+and that's equal to 2 10.
+
+51
+00:03:33.242 --> 00:03:38.173
+Now if I do that with
+the other basis vector.
+
+52
+00:03:38.173 --> 00:03:44.711
+If I do 2 3 10 1 multiplied by 0 1.
+
+53
+00:03:44.711 --> 00:03:50.804
+Then I'm going to get 2 times
+0 times plus 3 times 1.
+
+54
+00:03:50.804 --> 00:03:52.794
+10 times 0 plus 1 times 1,
+I'm going to get 3 1.
+
+55
+00:03:52.794 --> 00:03:57.915
+So the other basis vector,
+e2 hat, gets transformed
+
+56
+00:03:57.915 --> 00:04:02.937
+over to 3 1,
+which is going to be over here somewhere.
+
+57
+00:04:02.937 --> 00:04:10.418
+So that's e2 changed, I'm using
+the prime here to indicate changed, 3 1.
+
+58
+00:04:10.418 --> 00:04:15.074
+So what this matrix does,
+is it moves the basis vectors in some way,
+
+59
+00:04:15.074 --> 00:04:18.740
+it transforms them, it changes the space.
+
+60
+00:04:18.740 --> 00:04:22.160
+So what this matrix 2 3 10 1 does
+
+61
+00:04:22.160 --> 00:04:27.590
+is it's a function that operates on input
+vectors and gives us other output vectors.
+
+62
+00:04:27.590 --> 00:04:31.937
+And a set of simultaneous equations
+here is asking, in effect,
+
+63
+00:04:31.937 --> 00:04:37.347
+what vector I need in order to get a
+transformed product at the position 8 13.
+
+64
+00:04:37.347 --> 00:04:39.537
+In order to get an output of 8 13.
+
+65
+00:04:39.537 --> 00:04:44.810
+Now we can see what we mean now
+by the term linear algebra.
+
+66
+00:04:44.810 --> 00:04:48.660
+Linear algebra is linear, because it
+just takes input values, our a and
+
+67
+00:04:48.660 --> 00:04:52.280
+b, and multiplies them by constants.
+
+68
+00:04:52.280 --> 00:04:54.030
+So everything is linear.
+
+69
+00:04:54.030 --> 00:04:58.858
+And it's algebra, that is it's a notation
+describing mathematical objects and
+
+70
+00:04:58.858 --> 00:05:01.489
+a system of manipulating those notations.
+
+71
+00:05:01.489 --> 00:05:04.778
+So linear algebra is
+a mathematical system for
+
+72
+00:05:04.778 --> 00:05:09.175
+manipulating vectors in the spaces
+described by vectors.
+
+73
+00:05:09.175 --> 00:05:10.620
+So this is interesting.
+
+74
+00:05:10.620 --> 00:05:14.630
+There seems to be some kind of deep
+connection between simultaneous equations,
+
+75
+00:05:14.630 --> 00:05:19.055
+these things called matrices, and the
+vectors we were talking about last week.
+
+76
+00:05:19.055 --> 00:05:22.749
+And it turns that the key to solving
+simultaneous equation problems is
+
+77
+00:05:22.749 --> 00:05:25.755
+appreciating how vectors
+are transformed by matrices,
+
+78
+00:05:25.755 --> 00:05:27.769
+which is the heart of linear algebra.
+
+79
+00:05:27.769 --> 00:05:31.994
+>> [MUSIC]

@@ -1,0 +1,303 @@
+1
+00:00:00.370 --> 00:00:02.496
+[MÚSICA]
+
+2
+00:00:02.496 --> 00:00:04.983
+Previamente presentamos la idea de una matriz y
+
+3
+00:00:04.983 --> 00:00:08.458
+lo relacionó con el problema de resolver ecuaciones simultáneas.
+
+4
+00:00:08.458 --> 00:00:12.958
+Y mostramos que las columnas de una matriz solo léanos lo que le hace a la unidad
+
+5
+00:00:12.958 --> 00:00:15.490
+vector a lo largo de cada eje.
+
+6
+00:00:15.490 --> 00:00:19.290
+Ahora veremos diferentes tipos de matrices y lo que hacen al espacio.
+
+7
+00:00:19.290 --> 00:00:22.290
+Y qué pasa si aplicamos una transformación de matriz y
+
+8
+00:00:22.290 --> 00:00:24.842
+luego otro, que se denomina composición.
+
+9
+00:00:24.842 --> 00:00:28.812
+Ahora porque podríamos hacer cualquier Vector de una suma de vectores de
+
+10
+00:00:28.812 --> 00:00:31.866
+las versiones a escala de e1 hat y e2 hat.
+
+11
+00:00:31.866 --> 00:00:36.932
+Entonces, lo que eso significa es el resultado de la transformación solo va a ser
+
+12
+00:00:36.932 --> 00:00:42.092
+alguna suma de los vectores de transformación, que llamo sombrero e1 y sombrero e2.
+
+13
+00:00:42.092 --> 00:00:44.020
+Esto es un poco difícil de ver, pero
+
+14
+00:00:44.020 --> 00:00:50.010
+lo que significa es que las líneas de la cuadrícula de nuestro espacio permanece paralelo y espaciado uniformemente.
+
+15
+00:00:50.010 --> 00:00:53.461
+Pueden ser estirados o cortados, pero el origen se queda donde está y
+
+16
+00:00:53.461 --> 00:00:56.699
+no hay ninguna agilidad en el espacio, no se deforma.
+
+17
+00:00:56.699 --> 00:01:00.626
+Y esa es una consecuencia de nuestro escalar reglas de adición y multiplicación para
+
+18
+00:01:00.626 --> 00:01:01.760
+vectores.
+
+19
+00:01:01.760 --> 00:01:05.671
+Entonces eso es si escribo la matriz como capital A y
+
+20
+00:01:05.671 --> 00:01:09.780
+el vector está transformando es r, Lo que haya sido.
+
+21
+00:01:09.780 --> 00:01:12.630
+a b en nuestro problema de manzanas y plátanos.
+
+22
+00:01:12.630 --> 00:01:16.575
+Y eso me da una versión alterada.
+
+23
+00:01:16.575 --> 00:01:22.312
+Dijimos que era 8 13 antes, pero estoy va a llamarlo r transformado o r prime.
+
+24
+00:01:22.312 --> 00:01:25.380
+Entonces podemos ver lo que sucede cuando hago álgebra con eso.
+
+25
+00:01:25.380 --> 00:01:32.213
+Entonces si multiplico r por algún número, solo un número, llamémoslo n.
+
+26
+00:01:34.358 --> 00:01:38.521
+Y si aplico A a (nr), lo que soy diciendo que obtendré nr prime.
+
+27
+00:01:38.521 --> 00:01:42.249
+Y con suerte puedes ver si puse una n allí,
+
+28
+00:01:42.249 --> 00:01:46.562
+cuando lo multiplico todo estoy va a conseguir una n allí.
+
+29
+00:01:46.562 --> 00:01:50.984
+Del mismo modo, si multiplico
+
+30
+00:01:50.984 --> 00:01:55.406
+A por el vector (r + s),
+
+31
+00:01:55.406 --> 00:01:59.431
+entonces obtendré Ar + As.
+
+32
+00:01:59.431 --> 00:02:04.368
+Entonces, si obtengo esa multiplicación, obtengo eso, hacer todo de nuevo con otro
+
+33
+00:02:04.368 --> 00:02:08.884
+vector, y obtener otro vector s, y agrega esos dos, eso será cierto.
+
+34
+00:02:08.884 --> 00:02:13.756
+Entonces, lo que estoy diciendo aquí es que si puedo entonces pensar en estos
+
+35
+00:02:13.756 --> 00:02:18.728
+como los vectores básicos originales, sombrero e1 y sombrero e2,
+
+36
+00:02:18.728 --> 00:02:23.110
+Voy a obtener un poco más de e2 y e1 preparado.
+
+37
+00:02:23.110 --> 00:02:30.934
+Entonces, si digo que es ne1 hat + me2 hat,
+
+38
+00:02:30.934 --> 00:02:37.573
+Voy a obtener sombrero nAe1 + sombrero mAe2,
+
+39
+00:02:37.573 --> 00:02:45.660
+que es ne1 prime + me2 preparado.
+
+40
+00:02:45.660 --> 00:02:51.880
+Que es solo la suma del vector de algunos múltiplos de esos.
+
+41
+00:02:51.880 --> 00:02:57.112
+Entonces el espacio se transforma, e1 y e2 se mueven.
+
+42
+00:02:57.112 --> 00:03:00.217
+Y luego puedo agregar hasta vectores con ellos.
+
+43
+00:03:00.217 --> 00:03:05.756
+Así que eso es muy bueno, eso significa que todas nuestras reglas de suma vectorial funcionan.
+
+44
+00:03:05.756 --> 00:03:09.330
+Ahora tal vez eso es un poco confuso probemos con un ejemplo.
+
+45
+00:03:09.330 --> 00:03:13.900
+Así que tengo mi matriz A aquí de mi problema de manzanas y plátanos.
+
+46
+00:03:13.900 --> 00:03:19.695
+Entonces tengo 2 3 10 1, o si nos gusta, el vector 2 10 y el vector 3 1.
+
+47
+00:03:19.695 --> 00:03:24.886
+Ahora probemos un ejemplo como un vector 3 2.
+
+48
+00:03:26.773 --> 00:03:29.796
+Ahora si lo multiplico simplemente de forma directa,
+
+49
+00:03:29.796 --> 00:03:33.720
+como probablemente lo hicimos en la escuela, Tengo 2 veces 3 más 3 veces 2.
+
+50
+00:03:33.720 --> 00:03:36.087
+Así que eso es 6 más 6, eso es 12.
+
+51
+00:03:36.087 --> 00:03:40.510
+Y tengo 10 por 3, que es 30, más 1 por 2, que es 2.
+
+52
+00:03:40.510 --> 00:03:43.018
+Entonces eso es 32.
+
+53
+00:03:43.018 --> 00:03:50.103
+Pero podría pensar en que como siendo 2 3 10 1,
+
+54
+00:03:50.103 --> 00:03:56.480
+veces (3 veces 1 0 + 2 veces 0 1).
+
+55
+00:03:56.480 --> 00:04:03.718
+Es decir, 3 de nuestro sombrero e1 2 de sombrero e2 en una suma de vectores.
+
+56
+00:04:03.718 --> 00:04:08.477
+Ahora puedo sacar el 3 así que
+
+57
+00:04:08.477 --> 00:04:13.011
+eso es 3 veces
+
+58
+00:04:13.011 --> 00:04:17.327
+(2 3 10 1 veces 1 0).
+
+59
+00:04:18.409 --> 00:04:24.423
++ 2 veces (2 3 10
+
+60
+00:04:24.423 --> 00:04:29.174
+1 veces 0 1).
+
+61
+00:04:32.903 --> 00:04:37.903
+Y esto, sabemos que esto es lo que pasa desde e1 sombrero
+
+62
+00:04:37.903 --> 00:04:42.806
+para llegar a e1 prime aquí, entonces eso es 3 veces 2 10.
+
+63
+00:04:44.951 --> 00:04:51.996
+Y eso es 2 veces lo que le sucede a e2 hat, y eso va a 3 1.
+
+64
+00:04:53.463 --> 00:04:58.727
+Entonces eso nos da 6 más 6 es 12 y
+
+65
+00:04:58.727 --> 00:05:01.891
+30 más 2 es 32.
+
+66
+00:05:01.891 --> 00:05:05.610
+Entonces es verdad, estas reglas realmente funcionan.
+
+67
+00:05:05.610 --> 00:05:10.893
+Podemos pensar en una multiplicación de matrices simplemente siendo la multiplicación
+
+68
+00:05:10.893 --> 00:05:14.710
+de la suma de vectores de los vectores básicos transformados.
+
+69
+00:05:16.458 --> 00:05:20.020
+Así que pausa ahora por un momento y prueba eso tal vez con un ejemplo tuyo.
+
+70
+00:05:20.020 --> 00:05:23.869
+Y verificar que eso realmente funciona porque eso es realmente bastante profundo.
+
+71
+00:05:23.869 --> 00:05:27.410
+Esta matriz simplemente nos dice donde van los vectores de base.
+
+72
+00:05:27.410 --> 00:05:29.170
+Esa es la transformación que hace.
+
+73
+00:05:29.170 --> 00:05:31.090
+No es complicado, multiplicando la cosa.
+
+74
+00:05:31.090 --> 00:05:35.660
+No necesitamos preocuparnos por la mecánica de hacer la suma.
+
+75
+00:05:35.660 --> 00:05:38.909
+Podemos pensarlo en términos de lo que hace a los vectores en el espacio.
+
+76
+00:05:38.909 --> 00:05:41.769
+[MÚSICA]

@@ -1,0 +1,597 @@
+WEBVTT
+
+1
+00:00:01.730 --> 00:00:08.550
+So, we've looked at the two main vector operations of addition and scaling by a number.
+
+2
+00:00:08.550 --> 00:00:11.010
+And those are all the things we really need to be able to
+
+3
+00:00:11.010 --> 00:00:13.825
+do to define what we mean by a vector,
+
+4
+00:00:13.825 --> 00:00:16.650
+the mathematical properties a vector has.
+
+5
+00:00:16.650 --> 00:00:22.225
+Now, we can move on to define two things: the length of a vector,
+
+6
+00:00:22.225 --> 00:00:23.990
+also called its size,
+
+7
+00:00:23.990 --> 00:00:25.837
+and the dot product of a vector,
+
+8
+00:00:25.837 --> 00:00:30.586
+also called its inner, scalar or projection product.
+
+9
+00:00:30.586 --> 00:00:33.240
+The dot product is a huge and amazing concept
+
+10
+00:00:33.240 --> 00:00:35.905
+in linear algebra with huge numbers of implications,
+
+11
+00:00:35.905 --> 00:00:38.965
+and we'll only be able to touch on a few parts of it here, but enjoy.
+
+12
+00:00:38.965 --> 00:00:41.400
+It's one of the most beautiful parts of linear algebra.
+
+13
+00:00:41.400 --> 00:00:45.480
+So, when we define the vector initially, this guy,
+
+14
+00:00:45.480 --> 00:00:50.285
+r, we did it without reference to any coordinate system.
+
+15
+00:00:50.285 --> 00:00:51.910
+In fact, it's the geometric object,
+
+16
+00:00:51.910 --> 00:00:57.460
+this thing just has two properties: it's length here and its direction,
+
+17
+00:00:57.460 --> 00:01:00.365
+which is going this way as opposed to this way or this way.
+
+18
+00:01:00.365 --> 00:01:03.655
+So, irrespective of the coordinate system we decided to use,
+
+19
+00:01:03.655 --> 00:01:05.485
+we want to know how to calculate
+
+20
+00:01:05.485 --> 00:01:08.335
+those two properties: its length and the direction it's going.
+
+21
+00:01:08.335 --> 00:01:12.295
+Now, if the coordinate system that we used to define r,
+
+22
+00:01:12.295 --> 00:01:17.100
+used these two vectors, r and j,
+
+23
+00:01:17.100 --> 00:01:24.125
+we can say that r is equal to ai plus bj,
+
+24
+00:01:24.125 --> 00:01:28.136
+or is equal to a,b,
+
+25
+00:01:28.136 --> 00:01:31.035
+the way we were writing it in the last video.
+
+26
+00:01:31.035 --> 00:01:33.950
+Now, if we want to know the length of r,
+
+27
+00:01:33.950 --> 00:01:36.565
+well, we can draw a triangle, right? And then we can use Pythogoras' theorem.
+
+28
+00:01:36.565 --> 00:01:41.297
+So, we've got ai's going along this way,
+
+29
+00:01:41.297 --> 00:01:43.685
+and we've got bj's going along this way.
+
+30
+00:01:43.685 --> 00:01:46.730
+And if i and j are both of unit length that the length of those is just
+
+31
+00:01:46.730 --> 00:01:53.255
+a here and b here where these vertical lines on either side means the size.
+
+32
+00:01:53.255 --> 00:01:55.592
+So then, we can use Pythagoras' theorem just for
+
+33
+00:01:55.592 --> 00:01:59.015
+a triangle where we've got a there, b there.
+
+34
+00:01:59.015 --> 00:02:01.995
+This length then from Pythagoras' theorem will
+
+35
+00:02:01.995 --> 00:02:05.350
+be the square root of a squared plus b squared.
+
+36
+00:02:05.350 --> 00:02:08.820
+And we can say that that's equal to the length of r,
+
+37
+00:02:08.820 --> 00:02:11.990
+it's the square root of a squared plus b squared.
+
+38
+00:02:11.990 --> 00:02:17.895
+So, the length of, r is equal to a,b. So, r is that.
+
+39
+00:02:17.895 --> 00:02:20.695
+And the length of r, we defined to be equal to
+
+40
+00:02:20.695 --> 00:02:24.654
+the square root of a squared plus b squared.
+
+41
+00:02:24.654 --> 00:02:29.350
+Now, we've done this for two spatial directions defined by the unit vectors,
+
+42
+00:02:29.350 --> 00:02:33.055
+i and j, and those are at right angles to each other.
+
+43
+00:02:33.055 --> 00:02:36.810
+But this definition of the size of a vector is more general than that.
+
+44
+00:02:36.810 --> 00:02:39.785
+It doesn't matter if the different components of the vector are
+
+45
+00:02:39.785 --> 00:02:41.980
+dimensions in space or even things with
+
+46
+00:02:41.980 --> 00:02:45.835
+different, physical units like bedrooms or bathrooms or length and time and price,
+
+47
+00:02:45.835 --> 00:02:48.220
+we still define the size of a vector through
+
+48
+00:02:48.220 --> 00:02:51.720
+the sums of the squares of its components, all square rooted.
+
+49
+00:02:51.720 --> 00:02:54.820
+The next thing we're going to do is define the dot product which is one way,
+
+50
+00:02:54.820 --> 00:02:56.575
+one way of several,
+
+51
+00:02:56.575 --> 00:02:59.023
+of multiplying two vectors together.
+
+52
+00:02:59.023 --> 00:03:00.365
+So, we've got two vectors here,
+
+53
+00:03:00.365 --> 00:03:03.330
+r and s. I'm going to make this a bit more general, actually.
+
+54
+00:03:03.330 --> 00:03:05.630
+I'm going to give them components. So, I'm going to call it r_i, r_j.
+
+55
+00:03:05.630 --> 00:03:11.175
+So, r has a component i,
+
+56
+00:03:11.175 --> 00:03:13.740
+in this case, 3, and a component j, in this case, 2
+
+57
+00:03:13.740 --> 00:03:17.625
+in the j directions and the i directions, respectively.
+
+58
+00:03:17.625 --> 00:03:19.560
+And s, we could do the same thing.
+
+59
+00:03:19.560 --> 00:03:22.460
+We could say s has components s_i and s_j.
+
+60
+00:03:22.460 --> 00:03:30.670
+So then, we define the dot product,
+
+61
+00:03:30.670 --> 00:03:33.605
+and the product is just a number, like 3.
+
+62
+00:03:33.605 --> 00:03:39.369
+It doesn't have any associated spatial dimension or direction along the vectors i and j.
+
+63
+00:03:39.369 --> 00:03:44.180
+We'll define the dot product r dot s, to be equal to,
+
+64
+00:03:44.180 --> 00:03:51.590
+what happens if I multiply r_i by s_i,
+
+65
+00:03:51.590 --> 00:03:54.460
+and add it
+
+66
+00:03:54.460 --> 00:04:03.450
+to r_j times s_j.
+
+67
+00:04:03.450 --> 00:04:05.770
+So, in this case, that gives me,
+
+68
+00:04:05.770 --> 00:04:12.875
+in this case it gives me three there times minus one,
+
+69
+00:04:12.875 --> 00:04:18.000
+plus two times two.
+
+70
+00:04:18.000 --> 00:04:25.255
+So, that gives me three plus four - sorry, minus three plus four, which is equal to one.
+
+71
+00:04:25.255 --> 00:04:27.520
+So, the dot product of r dot s,
+
+72
+00:04:27.520 --> 00:04:32.285
+in this case, is minus three plus four, which is one.
+
+73
+00:04:32.285 --> 00:04:35.008
+Now, we can go on to look at one property of
+
+74
+00:04:35.008 --> 00:04:39.439
+the dot product which is that it's commutative.
+
+75
+00:04:39.439 --> 00:04:44.720
+So, commutative which is spelled commutative.
+
+76
+00:04:44.720 --> 00:04:47.520
+And that means that r dot s
+
+77
+00:04:47.520 --> 00:04:52.225
+is equal to s dot r. It doesn't matter which way around we do it.
+
+78
+00:04:52.225 --> 00:04:55.300
+And we can see that fairly simply because if we just switch that around,
+
+79
+00:04:55.300 --> 00:04:59.005
+we'd have s_i times r_i,
+
+80
+00:04:59.005 --> 00:05:00.715
+plus s_j times r_j,
+
+81
+00:05:00.715 --> 00:05:02.335
+and that's going to be the same number.
+
+82
+00:05:02.335 --> 00:05:04.375
+So, we can see immediately,
+
+83
+00:05:04.375 --> 00:05:07.080
+fairly trivially, that the dot product is commutative.
+
+84
+00:05:07.080 --> 00:05:09.305
+It doesn't matter which order we do it in.
+
+85
+00:05:09.305 --> 00:05:11.030
+The second property we're going to prove is
+
+86
+00:05:11.030 --> 00:05:13.870
+the dot product is distributive over addition.
+
+87
+00:05:13.870 --> 00:05:16.015
+So, if I have some third vector,
+
+88
+00:05:16.015 --> 00:05:17.890
+let's take some third vector, t,
+
+89
+00:05:17.890 --> 00:05:24.310
+what being distributive means is
+
+90
+00:05:24.310 --> 00:05:33.755
+that r dot s plus t is the same as r dot s plus r dot t. That is,
+
+91
+00:05:33.755 --> 00:05:38.895
+we can multiply out this bracket in the way that we would if they were just numbers.
+
+92
+00:05:38.895 --> 00:05:43.085
+And we're going to prove this in the general case for any dimension vectors.
+
+93
+00:05:43.085 --> 00:05:50.100
+So, we'll have a vector r is equal to the components r_1,
+
+94
+00:05:50.100 --> 00:05:51.361
+r_2, for i's and j's,
+
+95
+00:05:51.361 --> 00:05:54.325
+all way up to some dimension r_n.
+
+96
+00:05:54.325 --> 00:05:58.570
+And s is some other vector, s_1,
+
+97
+00:05:58.570 --> 00:06:02.953
+s_2, all the way up to some s _n.
+
+98
+00:06:02.953 --> 00:06:09.540
+And t is another one which is equal to t_1,
+
+99
+00:06:09.540 --> 00:06:14.310
+t_2, all the way up to some component t_n.
+
+100
+00:06:14.310 --> 00:06:18.930
+And then, r dot s plus t
+
+101
+00:06:18.930 --> 00:06:27.430
+is going to be equal to r_1 times s_1 plus t_1,
+
+102
+00:06:27.430 --> 00:06:30.325
+plus r_2, for the second dimension,
+
+103
+00:06:30.325 --> 00:06:33.205
+times s_2 plus t_2,
+
+104
+00:06:33.205 --> 00:06:35.965
+plus all the other dimensions,
+
+105
+00:06:35.965 --> 00:06:41.050
+plus r_n times s_n plus t_n,
+
+106
+00:06:41.050 --> 00:06:43.300
+if I multiply it out for all the dimensions.
+
+107
+00:06:43.300 --> 00:06:46.600
+And then, I can just multiply out those brackets,
+
+108
+00:06:46.600 --> 00:06:50.725
+that's going to be r_1 s_1 plus r_1 t_1,
+
+109
+00:06:50.725 --> 00:06:52.790
+plus, now multiply out this bracket,
+
+110
+00:06:52.790 --> 00:06:57.910
+r_2 s_2 plus r_2 t_2,
+
+111
+00:06:57.910 --> 00:06:59.800
+plus, all the dots,
+
+112
+00:06:59.800 --> 00:07:03.450
+r_n s_n plus r_n t_n.
+
+113
+00:07:03.450 --> 00:07:08.165
+And if I collect together the rs term,
+
+114
+00:07:08.165 --> 00:07:11.000
+so I've got r_1 s_1, r_2 s_2, and r_n s_n,
+
+115
+00:07:11.000 --> 00:07:14.230
+so that's r dot s,
+
+116
+00:07:14.230 --> 00:07:16.940
+and if I collect all the t terms together,
+
+117
+00:07:16.940 --> 00:07:19.870
+I've got r dot t. So,
+
+118
+00:07:19.870 --> 00:07:24.790
+we've demonstrated that this distributive property is in fact true.
+
+119
+00:07:24.790 --> 00:07:29.395
+So, it's also kind of obvious that if we multiply a vector through by a scalar,
+
+120
+00:07:29.395 --> 00:07:31.910
+so if we take a times s,
+
+121
+00:07:31.910 --> 00:07:37.270
+our other fundamental operation was multiplying by a scalar,
+
+122
+00:07:37.270 --> 00:07:40.555
+and then do the dot product on that,
+
+123
+00:07:40.555 --> 00:07:42.130
+so we do r dot a s,
+
+124
+00:07:42.130 --> 00:07:52.175
+then that's going to be equal to a times r dot s. Because if we take this s here,
+
+125
+00:07:52.175 --> 00:07:54.695
+when we do this, if we multiply s here,
+
+126
+00:07:54.695 --> 00:07:56.000
+through by a number, a,
+
+127
+00:07:56.000 --> 00:08:00.605
+we're just going to get the number a come out of all the components.
+
+128
+00:08:00.605 --> 00:08:10.723
+So, that's going to be if we do it r_i times as_i plus r_j times as_j,
+
+129
+00:08:10.723 --> 00:08:12.740
+that's the left-hand side,
+
+130
+00:08:12.740 --> 00:08:20.385
+and that's equal to a times r_i s_i plus r_j s_j.
+
+131
+00:08:20.385 --> 00:08:25.510
+So, that is, this property is called that it's
+
+132
+00:08:25.510 --> 00:08:34.011
+associative over scalar multiplication.
+
+133
+00:08:34.011 --> 00:08:38.430
+Over scalar, that's the number a, multiplication.
+
+134
+00:08:38.430 --> 00:08:41.445
+So, we've got three properties.
+
+135
+00:08:41.445 --> 00:08:44.120
+We've got it's associative over scalar multiplication,
+
+136
+00:08:44.120 --> 00:08:47.715
+the dot product is distributive, and it's commutative.
+
+137
+00:08:47.715 --> 00:08:50.210
+Now, the last thing we need to do is draw the link
+
+138
+00:08:50.210 --> 00:08:53.320
+between the dot product and the size of the vector.
+
+139
+00:08:53.320 --> 00:08:55.248
+This is quite surprising!
+
+140
+00:08:55.248 --> 00:08:58.880
+If we take r and dot it with itself,
+
+141
+00:08:58.880 --> 00:09:02.015
+we get r_i times r_i,
+
+142
+00:09:02.015 --> 00:09:04.170
+plus r_j times r_j,
+
+143
+00:09:04.170 --> 00:09:06.650
+plus all the other components, whatever they are.
+
+144
+00:09:06.650 --> 00:09:12.295
+So, that's equal to r_i squared plus r_j squared.
+
+145
+00:09:12.295 --> 00:09:15.630
+But we said that the size of the vector was the square root of that.
+
+146
+00:09:15.630 --> 00:09:22.856
+So, r dot r is equal to the size of the vector squared.
+
+147
+00:09:22.856 --> 00:09:24.530
+So, that is
+
+148
+00:09:24.530 --> 00:09:26.150
+the size of the vector is just given,
+
+149
+00:09:26.150 --> 00:09:30.820
+in some senses, by r dotted with itself, which is quite cool.

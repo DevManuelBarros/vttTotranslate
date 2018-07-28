@@ -1,0 +1,595 @@
+1
+00:00:01.730 --> 00:00:08.550
+Por lo tanto, hemos observado las dos operaciones vectoriales principales de suma y escala por un número.
+
+2
+00:00:08.550 --> 00:00:11.010
+Y esas son todas las cosas que realmente necesitamos para poder
+
+3
+00:00:11.010 --> 00:00:13.825
+hacer para definir lo que queremos decir con un vector,
+
+4
+00:00:13.825 --> 00:00:16.650
+las propiedades matemáticas que tiene un vector.
+
+5
+00:00:16.650 --> 00:00:22.225
+Ahora podemos pasar a definir dos cosas: la longitud de un vector,
+
+6
+00:00:22.225 --> 00:00:23.990
+también llamado su tamaño,
+
+7
+00:00:23.990 --> 00:00:25.837
+y el producto punto de un vector,
+
+8
+00:00:25.837 --> 00:00:30.586
+también llamado producto interno escalar o de proyección.
+
+9
+00:00:30.586 --> 00:00:33.240
+El producto de punto es un concepto enorme y sorprendente
+
+10
+00:00:33.240 --> 00:00:35.905
+en álgebra lineal con un gran número de implicaciones,
+
+11
+00:00:35.905 --> 00:00:38.965
+y solo podremos tocar algunas partes aquí, pero disfrutar.
+
+12
+00:00:38.965 --> 00:00:41.400
+Es una de las partes más bellas del álgebra lineal.
+
+13
+00:00:41.400 --> 00:00:45.480
+Entonces, cuando definimos el vector inicialmente, este tipo,
+
+14
+00:00:45.480 --> 00:00:50.285
+r, lo hicimos sin referencia a ningún sistema de coordenadas.
+
+15
+00:00:50.285 --> 00:00:51.910
+De hecho, es el objeto geométrico,
+
+16
+00:00:51.910 --> 00:00:57.460
+esto solo tiene dos propiedades: su longitud aquí y su dirección,
+
+17
+00:00:57.460 --> 00:01:00.365
+que va de esta manera en contra de esta manera o de esta manera.
+
+18
+00:01:00.365 --> 00:01:03.655
+Entonces, independientemente del sistema de coordenadas que decidimos usar,
+
+19
+00:01:03.655 --> 00:01:05.485
+queremos saber cómo calcular
+
+20
+00:01:05.485 --> 00:01:08.335
+esas dos propiedades: su longitud y la dirección a la que va.
+
+21
+00:01:08.335 --> 00:01:12.295
+Ahora, si el sistema de coordenadas que usamos para definir r,
+
+22
+00:01:12.295 --> 00:01:17.100
+usó estos dos vectores, r y j,
+
+23
+00:01:17.100 --> 00:01:24.125
+podemos decir que r es igual a ai más bj,
+
+24
+00:01:24.125 --> 00:01:28.136
+o es igual a a, b,
+
+25
+00:01:28.136 --> 00:01:31.035
+la forma en que lo estábamos escribiendo en el último video.
+
+26
+00:01:31.035 --> 00:01:33.950
+Ahora, si queremos saber la longitud de r,
+
+27
+00:01:33.950 --> 00:01:36.565
+bueno, podemos dibujar un triángulo, ¿verdad? Y luego podemos usar el teorema de Pythogoras.
+
+28
+00:01:36.565 --> 00:01:41.297
+Entonces, tenemos ai yendo por este camino,
+
+29
+00:01:41.297 --> 00:01:43.685
+y tenemos bj yendo por este camino.
+
+30
+00:01:43.685 --> 00:01:46.730
+Y si i y j son ambos de longitud de unidad que la longitud de esos es solo
+
+31
+00:01:46.730 --> 00:01:53.255
+a aquí y aquí, donde estas líneas verticales en cada lado significan el tamaño.
+
+32
+00:01:53.255 --> 00:01:55.592
+Entonces, podemos usar el teorema de Pitágoras solo para
+
+33
+00:01:55.592 --> 00:01:59.015
+un triángulo donde tenemos un allí, b allí.
+
+34
+00:01:59.015 --> 00:02:01.995
+Esta longitud luego del teorema de Pitágoras
+
+35
+00:02:01.995 --> 00:02:05.350
+ser la raíz cuadrada de un cuadrado más b cuadrado.
+
+36
+00:02:05.350 --> 00:02:08.820
+Y podemos decir que eso es igual a la longitud de r,
+
+37
+00:02:08.820 --> 00:02:11.990
+es la raíz cuadrada de un cuadrado más b cuadrado.
+
+38
+00:02:11.990 --> 00:02:17.895
+Entonces, la longitud de, r es igual a a, b. Entonces, r es eso.
+
+39
+00:02:17.895 --> 00:02:20.695
+Y la longitud de r, definimos que es igual a
+
+40
+00:02:20.695 --> 00:02:24.654
+la raíz cuadrada de un cuadrado más b al cuadrado.
+
+41
+00:02:24.654 --> 00:02:29.350
+Ahora, hemos hecho esto para dos direcciones espaciales definidas por los vectores unitarios,
+
+42
+00:02:29.350 --> 00:02:33.055
+i y j, y esos están en ángulo recto entre sí.
+
+43
+00:02:33.055 --> 00:02:36.810
+Pero esta definición del tamaño de un vector es más general que eso.
+
+44
+00:02:36.810 --> 00:02:39.785
+No importa si los diferentes componentes del vector son
+
+45
+00:02:39.785 --> 00:02:41.980
+dimensiones en el espacio o incluso cosas con
+
+46
+00:02:41.980 --> 00:02:45.835
+unidades físicas diferentes, como dormitorios o baños o longitud y tiempo y precio,
+
+47
+00:02:45.835 --> 00:02:48.220
+todavía definimos el tamaño de un vector a través
+
+48
+00:02:48.220 --> 00:02:51.720
+las sumas de los cuadrados de sus componentes, todos cuadrados enraizados.
+
+49
+00:02:51.720 --> 00:02:54.820
+Lo siguiente que vamos a hacer es definir el producto de punto que es de una sola manera,
+
+50
+00:02:54.820 --> 00:02:56.575
+una forma de varias,
+
+51
+00:02:56.575 --> 00:02:59.023
+de multiplicar dos vectores juntos.
+
+52
+00:02:59.023 --> 00:03:00.365
+Entonces, tenemos dos vectores aquí,
+
+53
+00:03:00.365 --> 00:03:03.330
+r y s. Voy a hacer esto un poco más general, en realidad.
+
+54
+00:03:03.330 --> 00:03:05.630
+Voy a darles componentes. Entonces, voy a llamarlo r_i, r_j.
+
+55
+00:03:05.630 --> 00:03:11.175
+Entonces, r tiene un componente i,
+
+56
+00:03:11.175 --> 00:03:13.740
+en este caso, 3, y un componente j, en este caso, 2
+
+57
+00:03:13.740 --> 00:03:17.625
+en las direcciones j y las direcciones i, respectivamente.
+
+58
+00:03:17.625 --> 00:03:19.560
+Y s, podríamos hacer lo mismo.
+
+59
+00:03:19.560 --> 00:03:22.460
+Podríamos decir que s tiene componentes s_i y s_j.
+
+60
+00:03:22.460 --> 00:03:30.670
+Entonces, definimos el producto punto,
+
+61
+00:03:30.670 --> 00:03:33.605
+y el producto es solo un número, como 3.
+
+62
+00:03:33.605 --> 00:03:39.369
+No tiene ninguna dimensión o dirección espacial asociada a lo largo de los vectores i y j.
+
+63
+00:03:39.369 --> 00:03:44.180
+Definiremos el producto de punto r dot s, para que sea igual a,
+
+64
+00:03:44.180 --> 00:03:51.590
+¿Qué pasa si multiplico r_i por s_i,
+
+65
+00:03:51.590 --> 00:03:54.460
+y agregarlo
+
+66
+00:03:54.460 --> 00:04:03.450
+a r_j veces s_j.
+
+67
+00:04:03.450 --> 00:04:05.770
+Entonces, en este caso, eso me da
+
+68
+00:04:05.770 --> 00:04:12.875
+en este caso me da tres veces menos uno,
+
+69
+00:04:12.875 --> 00:04:18.000
+más dos por dos
+
+70
+00:04:18.000 --> 00:04:25.255
+Entonces, eso me da tres más cuatro, perdón, menos tres más cuatro, que es igual a uno.
+
+71
+00:04:25.255 --> 00:04:27.520
+Entonces, el producto punto de r dot s,
+
+72
+00:04:27.520 --> 00:04:32.285
+en este caso, es menos tres más cuatro, que es uno.
+
+73
+00:04:32.285 --> 00:04:35.008
+Ahora, podemos ver una propiedad de
+
+74
+00:04:35.008 --> 00:04:39.439
+el producto punto que es que es conmutativo.
+
+75
+00:04:39.439 --> 00:04:44.720
+Entonces, conmutativa que se deletrea conmutativa.
+
+76
+00:04:44.720 --> 00:04:47.520
+Y eso significa que r dot s
+
+77
+00:04:47.520 --> 00:04:52.225
+es igual a s dot r. No importa en qué dirección lo hagamos.
+
+78
+00:04:52.225 --> 00:04:55.300
+Y podemos ver eso de manera bastante simple porque si simplemente cambiamos eso,
+
+79
+00:04:55.300 --> 00:04:59.005
+tendríamos s_i veces r_i,
+
+80
+00:04:59.005 --> 00:05:00.715
+más s_j veces r_j,
+
+81
+00:05:00.715 --> 00:05:02.335
+y ese va a ser el mismo número.
+
+82
+00:05:02.335 --> 00:05:04.375
+Entonces, podemos ver de inmediato,
+
+83
+00:05:04.375 --> 00:05:07.080
+bastante trivial, que el producto escalar es conmutativo.
+
+84
+00:05:07.080 --> 00:05:09.305
+No importa en qué orden lo hagamos.
+
+85
+00:05:09.305 --> 00:05:11.030
+La segunda propiedad que vamos a probar es
+
+86
+00:05:11.030 --> 00:05:13.870
+el producto punto es distributivo sobre la suma.
+
+87
+00:05:13.870 --> 00:05:16.015
+Entonces, si tengo un tercer vector,
+
+88
+00:05:16.015 --> 00:05:17.890
+tomemos un tercer vector, t,
+
+89
+00:05:17.890 --> 00:05:24.310
+lo que significa ser distributivo es
+
+90
+00:05:24.310 --> 00:05:33.755
+que r dot s plus t es lo mismo que r dot s plus r dot t. Es decir,
+
+91
+00:05:33.755 --> 00:05:38.895
+podemos multiplicar este soporte de la manera que lo haríamos si fueran solo números.
+
+92
+00:05:38.895 --> 00:05:43.085
+Y vamos a demostrar esto en el caso general de cualquier vector de dimensión.
+
+93
+00:05:43.085 --> 00:05:50.100
+Entonces, tendremos un vector r que es igual a los componentes r_1,
+
+94
+00:05:50.100 --> 00:05:51.361
+r_2, para i's y j's,
+
+95
+00:05:51.361 --> 00:05:54.325
+todo el camino hasta alguna dimensión r_n.
+
+96
+00:05:54.325 --> 00:05:58.570
+Y s es otro vector, s_1,
+
+97
+00:05:58.570 --> 00:06:02.953
+s_2, todo el camino hasta algunos s _n.
+
+98
+00:06:02.953 --> 00:06:09.540
+Y t es otro que es igual a t_1,
+
+99
+00:06:09.540 --> 00:06:14.310
+t_2, todo el camino hasta algún componente t_n.
+
+100
+00:06:14.310 --> 00:06:18.930
+Y luego, r dot s plus t
+
+101
+00:06:18.930 --> 00:06:27.430
+va a ser igual a r_1 veces s_1 más t_1,
+
+102
+00:06:27.430 --> 00:06:30.325
+más r_2, para la segunda dimensión,
+
+103
+00:06:30.325 --> 00:06:33.205
+veces s_2 más t_2,
+
+104
+00:06:33.205 --> 00:06:35.965
+más todas las otras dimensiones,
+
+105
+00:06:35.965 --> 00:06:41.050
+más r_n veces s_n más t_n,
+
+106
+00:06:41.050 --> 00:06:43.300
+si lo multiplico por todas las dimensiones.
+
+107
+00:06:43.300 --> 00:06:46.600
+Y luego, puedo multiplicar esos paréntesis,
+
+108
+00:06:46.600 --> 00:06:50.725
+eso va a ser r_1 s_1 más r_1 t_1,
+
+109
+00:06:50.725 --> 00:06:52.790
+Además, ahora multiplica este paréntesis
+
+110
+00:06:52.790 --> 00:06:57.910
+r_2 s_2 más r_2 t_2,
+
+111
+00:06:57.910 --> 00:06:59.800
+además, todos los puntos,
+
+112
+00:06:59.800 --> 00:07:03.450
+r_n s_n plus r_n t_n.
+
+113
+00:07:03.450 --> 00:07:08.165
+Y si reúno el término rs,
+
+114
+00:07:08.165 --> 00:07:11.000
+así que tengo r_1 s_1, r_2 s_2 y r_n s_n,
+
+115
+00:07:11.000 --> 00:07:14.230
+entonces eso es r puntos,
+
+116
+00:07:14.230 --> 00:07:16.940
+y si reúno todos los términos t juntos,
+
+117
+00:07:16.940 --> 00:07:19.870
+Tengo r punto t. Asi que,
+
+118
+00:07:19.870 --> 00:07:24.790
+hemos demostrado que esta propiedad distributiva es de hecho cierta.
+
+119
+00:07:24.790 --> 00:07:29.395
+Entonces, también es obvio que si multiplicamos un vector por un escalar,
+
+120
+00:07:29.395 --> 00:07:31.910
+entonces si tomamos un tiempo s,
+
+121
+00:07:31.910 --> 00:07:37.270
+nuestra otra operación fundamental se estaba multiplicando por un escalar,
+
+122
+00:07:37.270 --> 00:07:40.555
+y luego haz el producto de puntos en eso,
+
+123
+00:07:40.555 --> 00:07:42.130
+entonces hacemos r dot a s,
+
+124
+00:07:42.130 --> 00:07:52.175
+entonces eso va a ser igual a veces r punto s. Porque si tomamos esto s aquí,
+
+125
+00:07:52.175 --> 00:07:54.695
+cuando hacemos esto, si multiplicamos aquí,
+
+126
+00:07:54.695 --> 00:07:56.000
+a través de un número, a,
+
+127
+00:07:56.000 --> 00:08:00.605
+solo vamos a obtener el número a de todos los componentes.
+
+128
+00:08:00.605 --> 00:08:10.723
+Entonces, eso será si lo hacemos r_i veces as_i más r_j veces as_j,
+
+129
+00:08:10.723 --> 00:08:12.740
+ese es el lado izquierdo,
+
+130
+00:08:12.740 --> 00:08:20.385
+y eso es igual a veces r_i s_i plus r_j s_j.
+
+131
+00:08:20.385 --> 00:08:25.510
+Entonces, es decir, esta propiedad se llama que es
+
+132
+00:08:25.510 --> 00:08:34.011
+asociativo sobre la multiplicación escalar.
+
+133
+00:08:34.011 --> 00:08:38.430
+Sobre escalar, ese es el número a, multiplicación.
+
+134
+00:08:38.430 --> 00:08:41.445
+Entonces, tenemos tres propiedades.
+
+135
+00:08:41.445 --> 00:08:44.120
+Tenemos su asociativo sobre la multiplicación escalar,
+
+136
+00:08:44.120 --> 00:08:47.715
+el producto escalar es distributivo, y es conmutativo.
+
+137
+00:08:47.715 --> 00:08:50.210
+Ahora, lo último que tenemos que hacer es dibujar el enlace
+
+138
+00:08:50.210 --> 00:08:53.320
+entre el producto punto y el tamaño del vector.
+
+139
+00:08:53.320 --> 00:08:55.248
+¡Esto es bastante sorprendente!
+
+140
+00:08:55.248 --> 00:08:58.880
+Si tomamos r y lo salpicamos solo,
+
+141
+00:08:58.880 --> 00:09:02.015
+obtenemos r_i veces r_i,
+
+142
+00:09:02.015 --> 00:09:04.170
+más r_j veces r_j,
+
+143
+00:09:04.170 --> 00:09:06.650
+más todos los demás componentes, sean lo que sean.
+
+144
+00:09:06.650 --> 00:09:12.295
+Entonces, eso es igual a r_i al cuadrado más r_j al cuadrado.
+
+145
+00:09:12.295 --> 00:09:15.630
+Pero dijimos que el tamaño del vector era la raíz cuadrada de eso.
+
+146
+00:09:15.630 --> 00:09:22.856
+Entonces, r dot r es igual al tamaño del vector al cuadrado.
+
+147
+00:09:22.856 --> 00:09:24.530
+Así que eso es
+
+148
+00:09:24.530 --> 00:09:26.150
+el tamaño del vector se acaba de dar,
+
+149
+00:09:26.150 --> 00:09:30.820
+en algunos sentidos, por punteado consigo mismo, lo cual es bastante genial.

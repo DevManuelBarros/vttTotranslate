@@ -1,0 +1,227 @@
+1
+00:00:02.570 --> 00:00:08.925
+Por ejemplo, supongamos que tengo un montón de puntos de datos 2D como este.
+
+2
+00:00:08.925 --> 00:00:12.925
+Digamos que todos más o menos se encuentran en una línea recta a la derecha.
+
+3
+00:00:12.925 --> 00:00:14.670
+Podemos ver eso.
+
+4
+00:00:14.670 --> 00:00:21.110
+Estos tipos más o menos a lo largo de la línea van a ser algo así.
+
+5
+00:00:21.110 --> 00:00:26.360
+Me puedo imaginar volver a describir esos datos mediante el mapeo
+
+6
+00:00:26.360 --> 00:00:31.475
+ellos en esa línea y luego diciendo qué tan lejos están a lo largo de esa línea.
+
+7
+00:00:31.475 --> 00:00:34.440
+Puedo mapear a este tipo en la línea.
+
+8
+00:00:34.440 --> 00:00:37.670
+Puedo decir que los mapas de origen bajan
+
+9
+00:00:37.670 --> 00:00:41.785
+allí y podría decir que este punto de datos es tan largo en la línea.
+
+10
+00:00:41.785 --> 00:00:46.850
+Y él también, así que está tan lejos en la línea, allí.
+
+11
+00:00:46.850 --> 00:00:50.770
+Y él está tan lejos de la línea.
+
+12
+00:00:50.770 --> 00:00:52.850
+Así que tengo dos dimensiones aquí.
+
+13
+00:00:52.850 --> 00:00:56.865
+Cuán lejos estoy de la línea y cuán lejos estoy de la línea.
+
+14
+00:00:56.865 --> 00:01:02.870
+Y estos muchachos son todas distancias ligeramente diferentes de la línea.
+
+15
+00:01:02.870 --> 00:01:06.350
+Ahora, es un poco un argumento en las estadísticas sobre si
+
+16
+00:01:06.350 --> 00:01:09.080
+hacer la distancia de esa manera verticalmente,
+
+17
+00:01:09.080 --> 00:01:12.970
+o de esa manera como una proyección de la distancia desde la línea.
+
+18
+00:01:12.970 --> 00:01:16.160
+Pero es una especie de argumento teórico.
+
+19
+00:01:16.160 --> 00:01:19.280
+Pero note que esta distancia de la línea es
+
+20
+00:01:19.280 --> 00:01:23.775
+efectivamente una medida de lo ruidosa que es esta nube de datos.
+
+21
+00:01:23.775 --> 00:01:25.360
+Si están todos apretados en la línea,
+
+22
+00:01:25.360 --> 00:01:27.540
+todos estarían a muy poca distancia,
+
+23
+00:01:27.540 --> 00:01:30.005
+y si todos estaban bastante separados,
+
+24
+00:01:30.005 --> 00:01:32.189
+estarían bastante lejos.
+
+25
+00:01:32.189 --> 00:01:34.400
+Entonces esta distancia de la línea,
+
+26
+00:01:34.400 --> 00:01:38.180
+es de hecho el ruido.
+
+27
+00:01:38.180 --> 00:01:40.670
+Y esa es información que no es muy útil para nosotros.
+
+28
+00:01:40.670 --> 00:01:42.300
+Entonces podemos querer colapsarlo.
+
+29
+00:01:42.300 --> 00:01:48.170
+Excepto que esa dimensión de ruido me dice lo bueno que es este ajuste de línea.
+
+30
+00:01:48.170 --> 00:01:50.698
+Si la línea que mejor se ajustaba estaba sesgada,
+
+31
+00:01:50.698 --> 00:01:54.785
+estaba todo mal, recibo un número mucho mayor para el ruido.
+
+32
+00:01:54.785 --> 00:01:57.080
+Y si la línea que mejor se ajustaba era la mejor posible,
+
+33
+00:01:57.080 --> 00:02:01.830
+Obtengo el número mínimo posible para el ruido.
+
+34
+00:02:01.830 --> 00:02:06.285
+Entonces esa dimensión de ruido contiene información que me dirá qué tan bueno es mi ajuste.
+
+35
+00:02:06.285 --> 00:02:07.328
+Entonces, cuando estoy haciendo ciencia de datos,
+
+36
+00:02:07.328 --> 00:02:10.940
+me dice lo bueno que es mi ajuste a mis datos.
+
+37
+00:02:10.940 --> 00:02:16.560
+Y la forma en que he definido estas dos direcciones a lo largo de la línea y fuera de la línea,
+
+38
+00:02:16.560 --> 00:02:18.610
+son ortogonales entre sí.
+
+39
+00:02:18.610 --> 00:02:21.920
+Entonces puedo usar el producto de puntos para hacer la proyección a
+
+40
+00:02:21.920 --> 00:02:26.030
+mapear los datos del espacio X-Y en el espacio de la línea,
+
+41
+00:02:26.030 --> 00:02:28.293
+a lo largo de la línea y lejos de la línea,
+
+42
+00:02:28.293 --> 00:02:31.160
+que es lo que hicimos, lo que aprendimos a hacer en el último segmento.
+
+43
+00:02:31.160 --> 00:02:33.200
+Ahora si estamos pensando en una red neuronal en
+
+44
+00:02:33.200 --> 00:02:36.485
+el aprendizaje automático que reconoce los rostros dice,
+
+45
+00:02:36.485 --> 00:02:38.600
+tal vez me gustaría hacer una transformación de
+
+46
+00:02:38.600 --> 00:02:43.745
+todos los píxeles en una cara en una nueva base que describe la forma de la nariz,
+
+47
+00:02:43.745 --> 00:02:45.825
+el tono de la piel, la distancia entre los ojos,
+
+48
+00:02:45.825 --> 00:02:49.400
+ese tipo de cosas y descartar los datos reales de píxeles.
+
+49
+00:02:49.400 --> 00:02:51.410
+Entonces, el objetivo del proceso de aprendizaje de
+
+50
+00:02:51.410 --> 00:02:54.380
+la red neuronal va a ser de alguna manera derivar un conjunto de
+
+51
+00:02:54.380 --> 00:03:00.085
+bases vectores que extraen las características más ricas en información de las caras.
+
+52
+00:03:00.085 --> 00:03:03.560
+En este video, hemos hablado sobre la dimensionalidad de un espacio vectorial en
+
+53
+00:03:03.560 --> 00:03:07.465
+términos del número de factores de base independientes que tiene.
+
+54
+00:03:07.465 --> 00:03:11.033
+Encontramos una prueba de independencia de que el conjunto de vectores es
+
+55
+00:03:11.033 --> 00:03:16.430
+independiente si uno de ellos no es una combinación lineal de los demás.
+
+56
+00:03:16.430 --> 00:03:20.630
+Hemos hablado más sobre lo que eso significa en términos de mapeo de un espacio a
+
+57
+00:03:20.630 --> 00:03:25.650
+otro y cómo va a ser útil en la ciencia de datos y el aprendizaje automático.

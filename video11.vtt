@@ -1,0 +1,355 @@
+WEBVTT
+
+1
+00:00:00.370 --> 00:00:02.496
+[MUSIC]
+
+2
+00:00:02.496 --> 00:00:04.983
+Previously we introduced
+the idea of a matrix and
+
+3
+00:00:04.983 --> 00:00:08.458
+related it to the problem of
+solving simultaneous equations.
+
+4
+00:00:08.458 --> 00:00:12.958
+And we showed that the columns of a matrix
+just read us what it does to the unit
+
+5
+00:00:12.958 --> 00:00:15.490
+vector along each axis.
+
+6
+00:00:15.490 --> 00:00:19.290
+Now we'll look at different types of
+matrices and what they do to space.
+
+7
+00:00:19.290 --> 00:00:22.290
+And what happens if we apply
+one matrix transformation and
+
+8
+00:00:22.290 --> 00:00:24.842
+then another, which is termed composition.
+
+9
+00:00:24.842 --> 00:00:28.812
+Now because we could make any
+vector out of a vector sum of
+
+10
+00:00:28.812 --> 00:00:31.866
+the scaled versions of e1 hat and e2 hat.
+
+11
+00:00:31.866 --> 00:00:36.932
+Then what that means is the result of
+the transformation is just going to be
+
+12
+00:00:36.932 --> 00:00:42.092
+some sum of the transform vectors,
+which I'm calling e1 hat and e2 hat.
+
+13
+00:00:42.092 --> 00:00:44.020
+This is a bit hard to see but
+
+14
+00:00:44.020 --> 00:00:50.010
+what it means is that the grid lines of
+our space stay parallel and evenly spaced.
+
+15
+00:00:50.010 --> 00:00:53.461
+They might be stretched or sheared,
+but the origin stays where it is and
+
+16
+00:00:53.461 --> 00:00:56.699
+there isn't any curviness to the space,
+it doesn't get warped.
+
+17
+00:00:56.699 --> 00:01:00.626
+And that's a consequence of our scalar
+addition and multiplication rules for
+
+18
+00:01:00.626 --> 00:01:01.760
+vectors.
+
+19
+00:01:01.760 --> 00:01:05.671
+So that is if I write down
+the matrix as capital A and
+
+20
+00:01:05.671 --> 00:01:09.780
+the vector its transforming is r,
+whatever it was.
+
+21
+00:01:09.780 --> 00:01:12.630
+a b in our apples and bananas problem.
+
+22
+00:01:12.630 --> 00:01:16.575
+And that gives me some altered version.
+
+23
+00:01:16.575 --> 00:01:22.312
+We said it was 8 13 before, but I'm
+going to call it r transformed or r prime.
+
+24
+00:01:22.312 --> 00:01:25.380
+Then we can look at what happens
+when I do algebra with it.
+
+25
+00:01:25.380 --> 00:01:32.213
+So if I multiply r by some number,
+just a number, let's call it n.
+
+26
+00:01:34.358 --> 00:01:38.521
+And if I apply A to (nr), what I'm
+saying is that I will get nr prime.
+
+27
+00:01:38.521 --> 00:01:42.249
+And hopefully you can see
+if I put an n in there,
+
+28
+00:01:42.249 --> 00:01:46.562
+when I multiply it all out I'm
+going to get an n in there.
+
+29
+00:01:46.562 --> 00:01:50.984
+Similarly, if I multiply
+
+30
+00:01:50.984 --> 00:01:55.406
+A by the vector (r+s),
+
+31
+00:01:55.406 --> 00:01:59.431
+then I will get Ar + As.
+
+32
+00:01:59.431 --> 00:02:04.368
+So if I get that multiplication, get that,
+do the whole thing again with another
+
+33
+00:02:04.368 --> 00:02:08.884
+vector, and get another vector s, and
+add those two, that will be true.
+
+34
+00:02:08.884 --> 00:02:13.756
+So what I'm saying here is that
+if I can then think of these
+
+35
+00:02:13.756 --> 00:02:18.728
+as being the original basis vectors,
+e1 hat and e2 hat,
+
+36
+00:02:18.728 --> 00:02:23.110
+I'll then get some addition of e2 and
+e1 primed.
+
+37
+00:02:23.110 --> 00:02:30.934
+So if I say that's ne1 hat + me2 hat,
+
+38
+00:02:30.934 --> 00:02:37.573
+I'll get nAe1 hat + mAe2 hat,
+
+39
+00:02:37.573 --> 00:02:45.660
+which is ne1 prime + me2 primed.
+
+40
+00:02:45.660 --> 00:02:51.880
+Which is just the vector sum
+of some multiple of those.
+
+41
+00:02:51.880 --> 00:02:57.112
+So the space gets transformed,
+e1 and e2 get moved.
+
+42
+00:02:57.112 --> 00:03:00.217
+And then I can just add
+up vectors with them.
+
+43
+00:03:00.217 --> 00:03:05.756
+So that's very nice, that means that
+all of our vector sum rules work.
+
+44
+00:03:05.756 --> 00:03:09.330
+Now maybe that's a bit confusing so
+let's try it with an example.
+
+45
+00:03:09.330 --> 00:03:13.900
+So I've got my matrix A here
+from my apples bananas problem.
+
+46
+00:03:13.900 --> 00:03:19.695
+So I have 2 3 10 1, or if we like,
+the vector 2 10 and the vector 3 1.
+
+47
+00:03:19.695 --> 00:03:24.886
+Now let's try an example
+like a vector 3 2.
+
+48
+00:03:26.773 --> 00:03:29.796
+Now if I multiply that out
+just straightforwardly,
+
+49
+00:03:29.796 --> 00:03:33.720
+as we probably did at school,
+I've got 2 times 3 plus 3 times 2.
+
+50
+00:03:33.720 --> 00:03:36.087
+So that's 6 plus 6, that's 12.
+
+51
+00:03:36.087 --> 00:03:40.510
+And I've got 10 times 3, which is 30,
+plus 1 times 2, which is 2.
+
+52
+00:03:40.510 --> 00:03:43.018
+So that's 32.
+
+53
+00:03:43.018 --> 00:03:50.103
+But I could think of
+that as being 2 3 10 1,
+
+54
+00:03:50.103 --> 00:03:56.480
+times (3 times 1 0 + 2 times 0 1).
+
+55
+00:03:56.480 --> 00:04:03.718
+That is, 3 of our e1 hat and
+2 of e2 hat in a vector sum.
+
+56
+00:04:03.718 --> 00:04:08.477
+Now I can take the 3 out so
+
+57
+00:04:08.477 --> 00:04:13.011
+that's 3 times 
+
+58
+00:04:13.011 --> 00:04:17.327
+(2 3 10 1 times 1 0).
+
+59
+00:04:18.409 --> 00:04:24.423
++ 2 times (2 3 10
+
+60
+00:04:24.423 --> 00:04:29.174
+1 times 0 1).
+
+61
+00:04:32.903 --> 00:04:37.903
+And this, we know that this
+is what happens from e1 hat
+
+62
+00:04:37.903 --> 00:04:42.806
+to get to e1 prime here,
+so that's 3 times 2 10.
+
+63
+00:04:44.951 --> 00:04:51.996
+And that's 2 times what happens to e2 hat,
+and that goes to 3 1.
+
+64
+00:04:53.463 --> 00:04:58.727
+So that gives us 6 plus 6 is 12 and
+
+65
+00:04:58.727 --> 00:05:01.891
+30 plus 2 is 32.
+
+66
+00:05:01.891 --> 00:05:05.610
+So it really is true,
+these rules really do work.
+
+67
+00:05:05.610 --> 00:05:10.893
+We can think of a matrix multiplication
+as just being the multiplication
+
+68
+00:05:10.893 --> 00:05:14.710
+of the vector sum of
+the transformed basis vectors.
+
+69
+00:05:16.458 --> 00:05:20.020
+So pause now for a moment and try that
+maybe with an example of your own.
+
+70
+00:05:20.020 --> 00:05:23.869
+And verify that that really does work
+because that's really quite deep.
+
+71
+00:05:23.869 --> 00:05:27.410
+This matrix just tells us
+where the basis vectors go.
+
+72
+00:05:27.410 --> 00:05:29.170
+That's the transformation it does.
+
+73
+00:05:29.170 --> 00:05:31.090
+It's not a complicated,
+multiplying out thing.
+
+74
+00:05:31.090 --> 00:05:35.660
+We don't need to worry about
+the mechanics of doing the sum.
+
+75
+00:05:35.660 --> 00:05:38.909
+We can just think of it in terms of
+what it does to vectors in the space.
+
+76
+00:05:38.909 --> 00:05:41.769
+[MUSIC]

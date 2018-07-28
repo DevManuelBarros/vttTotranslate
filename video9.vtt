@@ -1,0 +1,229 @@
+WEBVTT
+
+1
+00:00:02.570 --> 00:00:08.925
+For example, say I have a bunch of 2D data points like this.
+
+2
+00:00:08.925 --> 00:00:12.925
+Say they all more or less lie on a straight line right.
+
+3
+00:00:12.925 --> 00:00:14.670
+We can kind of see that.
+
+4
+00:00:14.670 --> 00:00:21.110
+These guys all more or less along the line that's going to be something like that.
+
+5
+00:00:21.110 --> 00:00:26.360
+I can imagine re-describing that data by mapping
+
+6
+00:00:26.360 --> 00:00:31.475
+them onto that line and then saying how far they are along that line.
+
+7
+00:00:31.475 --> 00:00:34.440
+I can map this guy down onto the line.
+
+8
+00:00:34.440 --> 00:00:37.670
+I can say the origin maps down
+
+9
+00:00:37.670 --> 00:00:41.785
+there and I could then say this data point is that far along the line.
+
+10
+00:00:41.785 --> 00:00:46.850
+And he's also, so he's that far along the line, there.
+
+11
+00:00:46.850 --> 00:00:50.770
+And he's this far away from the line.
+
+12
+00:00:50.770 --> 00:00:52.850
+So I've got two dimensions here.
+
+13
+00:00:52.850 --> 00:00:56.865
+How far I am along the line and how far I am from the line.
+
+14
+00:00:56.865 --> 00:01:02.870
+And these guys they're all slightly different distances from the line.
+
+15
+00:01:02.870 --> 00:01:06.350
+Now, it's a little bit of an argument in stats as to whether we
+
+16
+00:01:06.350 --> 00:01:09.080
+do the distance that way vertically,
+
+17
+00:01:09.080 --> 00:01:12.970
+or that way as a projection of the distance from the line.
+
+18
+00:01:12.970 --> 00:01:16.160
+But it's sort of a theoretical argument.
+
+19
+00:01:16.160 --> 00:01:19.280
+But notice that this distance from the line is
+
+20
+00:01:19.280 --> 00:01:23.775
+effectively a measure of how noisy this data cloud is.
+
+21
+00:01:23.775 --> 00:01:25.360
+If they are all tight on the line,
+
+22
+00:01:25.360 --> 00:01:27.540
+they'd all be very small distances away,
+
+23
+00:01:27.540 --> 00:01:30.005
+and if they were all quite spread,
+
+24
+00:01:30.005 --> 00:01:32.189
+they'd be quite big distances away.
+
+25
+00:01:32.189 --> 00:01:34.400
+So this distance from the line-ness,
+
+26
+00:01:34.400 --> 00:01:38.180
+is in fact the noise.
+
+27
+00:01:38.180 --> 00:01:40.670
+And that's information that isn't very useful to us.
+
+28
+00:01:40.670 --> 00:01:42.300
+So we might want to collapse it.
+
+29
+00:01:42.300 --> 00:01:48.170
+Except that that noise dimension tells me how good this line fit is.
+
+30
+00:01:48.170 --> 00:01:50.698
+If the best fit line was was all skewed,
+
+31
+00:01:50.698 --> 00:01:54.785
+was all wrong, I get a much bigger number for the noisiness.
+
+32
+00:01:54.785 --> 00:01:57.080
+And if the best fit line was as good as possible,
+
+33
+00:01:57.080 --> 00:02:01.830
+I get the minimum possible number for the noisiness.
+
+34
+00:02:01.830 --> 00:02:06.285
+So that noise dimension contains information that's going to tell me how good my fit is.
+
+35
+00:02:06.285 --> 00:02:07.328
+So when I'm doing data science,
+
+36
+00:02:07.328 --> 00:02:10.940
+it tells me how good my fit to my data is.
+
+37
+00:02:10.940 --> 00:02:16.560
+And the way I've defined these two directions along the line and away from the line,
+
+38
+00:02:16.560 --> 00:02:18.610
+they are orthogonal to each other.
+
+39
+00:02:18.610 --> 00:02:21.920
+So I can use the dot product to do the projection to
+
+40
+00:02:21.920 --> 00:02:26.030
+map the data from the X-Y space onto the space of the line,
+
+41
+00:02:26.030 --> 00:02:28.293
+along the line and away from the line,
+
+42
+00:02:28.293 --> 00:02:31.160
+which is what we did, what we learned to do in the last little segment.
+
+43
+00:02:31.160 --> 00:02:33.200
+Now if we're thinking about a neural network in
+
+44
+00:02:33.200 --> 00:02:36.485
+machine learning that recognises faces say,
+
+45
+00:02:36.485 --> 00:02:38.600
+maybe I'd want to make some transformation of
+
+46
+00:02:38.600 --> 00:02:43.745
+all the pixels in a face into a new basis that describes the nose shape,
+
+47
+00:02:43.745 --> 00:02:45.825
+the skin hue, the distance between the eyes,
+
+48
+00:02:45.825 --> 00:02:49.400
+those sorts of things and discard the actual pixel data.
+
+49
+00:02:49.400 --> 00:02:51.410
+So the goal of the learning process of
+
+50
+00:02:51.410 --> 00:02:54.380
+the neural network is going to be to somehow derive a set of
+
+51
+00:02:54.380 --> 00:03:00.085
+bases vectors that extract the most information-rich features of the faces.
+
+52
+00:03:00.085 --> 00:03:03.560
+So in this video we've talked about the dimensionality of a vector space in
+
+53
+00:03:03.560 --> 00:03:07.465
+terms of the number of independent basis factors that it has.
+
+54
+00:03:07.465 --> 00:03:11.033
+We found a test for independence that the set of vectors are
+
+55
+00:03:11.033 --> 00:03:16.430
+independent if one of them is not a linear combination of the others.
+
+56
+00:03:16.430 --> 00:03:20.630
+We've talked more importantly about what that means in terms of mapping from one space to
+
+57
+00:03:20.630 --> 00:03:25.650
+another and how that is going to be useful in data science and machine learning.

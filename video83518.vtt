@@ -1,0 +1,259 @@
+1
+00:00:00.000 --> 00:00:02.662
+[MÚSICA]
+
+2
+00:00:02.662 --> 00:00:07.227
+Así que hemos visto cómo no solo tenemos que tener vectores de base que son nuestros 1,0 normales y
+
+3
+00:00:07.227 --> 00:00:10.200
+0,1, la llamada base natural aquí.
+
+4
+00:00:10.200 --> 00:00:14.765
+Podemos tener diferentes vectores de base que redefinir cómo nos movemos sobre el espacio.
+
+5
+00:00:14.765 --> 00:00:18.295
+En este video, lo que vamos a hacer es vamos a definir lo que queremos decir con
+
+6
+00:00:18.295 --> 00:00:23.565
+una base, por un espacio vectorial, y por el término independencia lineal, que
+
+7
+00:00:23.565 --> 00:00:29.265
+nos va a dejar entender cuántos dimensiones que tiene nuestro espacio vectorial en realidad.
+
+8
+00:00:29.265 --> 00:00:33.385
+Entonces, primero definamos lo que queremos decir con una base.
+
+9
+00:00:33.385 --> 00:00:39.290
+Una base es un conjunto de n vectores que no son combinaciones lineales entre sí,
+
+10
+00:00:39.290 --> 00:00:41.980
+lo que significa que son linealmente independiente y
+
+11
+00:00:41.980 --> 00:00:45.580
+que abarcan el espacio que ellos describen
+
+12
+00:00:45.580 --> 00:00:48.380
+El espacio es entonces n-dimensional.
+
+13
+00:00:48.380 --> 00:00:51.824
+El primer criterio que puedo escribir abajo diciendo que si están
+
+14
+00:00:51.824 --> 00:00:53.244
+independiente linealmente,
+
+15
+00:00:53.244 --> 00:00:57.377
+entonces no puedo escribir ninguno por tomando una combinación de los demás.
+
+16
+00:00:57.377 --> 00:01:02.125
+Por ejemplo, si tuviera un candidato, b3,
+
+17
+00:01:02.125 --> 00:01:09.469
+sería linealmente dependiente sobre la base de vectores b1 y b2,
+
+18
+00:01:09.469 --> 00:01:14.706
+si pudiera tomar una combinación de ellos a1b1s + a2b2s,
+
+19
+00:01:14.706 --> 00:01:19.326
+donde a1 y a2 son números, si pudiera tomar un lineal
+
+20
+00:01:19.326 --> 00:01:23.964
+combinación de b1 y b2 así, y encuentra b3,
+
+21
+00:01:23.964 --> 00:01:28.728
+entonces, b3 sería linealmente depende de b1 y b2.
+
+22
+00:01:28.728 --> 00:01:33.440
+No sería un vector independiente, así que es un vector.
+
+23
+00:01:33.440 --> 00:01:36.390
+Puedo esbozarlo por haciendo algo como esto
+
+24
+00:01:36.390 --> 00:01:42.162
+Si tengo b1 aquí, y di b2 aquí, si b3, puedo encontrar por
+
+25
+00:01:42.162 --> 00:01:48.800
+alguna combinación de b1 y
+
+26
+00:01:48.800 --> 00:01:53.955
+b2s, debe estar en el mismo plano que b1 y b2, bien, el plano de mi tablero.
+
+27
+00:01:53.955 --> 00:01:56.585
+Si b3 está mintiendo fuera del avión aquí,
+
+28
+00:01:56.585 --> 00:02:01.825
+No pude hacer el fuera de plano componente del mismo usando mis b1s y b2s.
+
+29
+00:02:01.825 --> 00:02:06.605
+Entonces b3 sería linealmente independiente de b1 y b2.
+
+30
+00:02:06.605 --> 00:02:11.410
+Esto = Yo nunca podría hacer realidad, y entonces b3 estaría fuera del avión.
+
+31
+00:02:11.410 --> 00:02:13.640
+Entonces tendría tres vectores básicos.
+
+32
+00:02:13.640 --> 00:02:18.050
+Esos tres definirían entonces un tres espacio vectorial dimensional, y
+
+33
+00:02:18.050 --> 00:02:20.480
+Podría llegar a cualquier parte en el espacio 3D con ellos.
+
+34
+00:02:20.480 --> 00:02:25.370
+Y luego si tuviera otro vector base, b4, esa no era una combinación lineal de
+
+35
+00:02:25.370 --> 00:02:30.610
+b1, b2 y b3, entonces b4 luego dejaría yo tengo un espacio de cuatro dimensiones y
+
+36
+00:02:30.610 --> 00:02:33.290
+y así sucesivamente en tantas dimensiones como quiera.
+
+37
+00:02:34.870 --> 00:02:38.220
+Entonces un vector está en el vector espacio abarcado por b1 y
+
+38
+00:02:38.220 --> 00:02:43.090
+b2 si puede ser encontrado por un lineal combinación de b1s y b2s.
+
+39
+00:02:43.090 --> 00:02:47.360
+Ahora, fíjate cuál es mi base los vectores b no tienen que serlo.
+
+40
+00:02:47.360 --> 00:02:51.830
+No tienen que ser vectores unitarios, con lo cual me refiero a vectores de longitud 1.
+
+41
+00:02:51.830 --> 00:02:54.430
+Y no tienen que ser ortogonales, a 90 grados el uno del otro,
+
+42
+00:02:54.430 --> 00:02:56.030
+normal el uno al otro.
+
+43
+00:02:56.030 --> 00:02:58.680
+Pero todo va a será mucho más fácil si lo son.
+
+44
+00:02:58.680 --> 00:02:59.850
+Entonces, si es posible,
+
+45
+00:02:59.850 --> 00:03:04.130
+quieres construir lo que se llama un conjunto de vectores básicos ortonormales
+
+46
+00:03:04.130 --> 00:03:06.460
+donde están todos a 90 grados a uno al otro y toda la longitud de la unidad.
+
+47
+00:03:08.060 --> 00:03:12.560
+Ahora, pensemos en lo que sucede cuando mapeamos de una base a otra.
+
+48
+00:03:12.560 --> 00:03:15.930
+La recta numérica de los ejes de la grilla original
+
+49
+00:03:15.930 --> 00:03:19.180
+luego se proyecta hacia la nueva grilla, como aquí.
+
+50
+00:03:19.180 --> 00:03:22.530
+Y potencialmente tiene diferente valores en esa grilla, pero
+
+51
+00:03:22.530 --> 00:03:26.520
+la proyección mantiene la grilla siendo espaciado equitativamente
+
+52
+00:03:26.520 --> 00:03:30.630
+Por lo tanto, cualquier mapeo que hagamos de un conjunto de vectores de base,
+
+53
+00:03:30.630 --> 00:03:34.240
+un sistema de coordenadas a otro conjunto de vectores de base, otro sistema de coordenadas,
+
+54
+00:03:34.240 --> 00:03:38.050
+mantiene el espacio vectorial siendo una cuadrícula regularmente espaciada, donde
+
+55
+00:03:38.050 --> 00:03:42.990
+nuestras reglas originales de adición de vectores y la multiplicación por un escalador aún funciona.
+
+56
+00:03:42.990 --> 00:03:45.880
+No dobla ni dobla el espacio,
+
+57
+00:03:45.880 --> 00:03:50.350
+que es lo que el bit lineal en álgebra lineal significa geométricamente.
+
+58
+00:03:50.350 --> 00:03:53.230
+Las cosas pueden ser estiradas o girado o invertido, pero
+
+59
+00:03:53.230 --> 00:03:57.057
+todo permanece uniformemente espaciado y las combinaciones lineales aún funcionan.
+
+60
+00:03:57.057 --> 00:04:01.190
+Ahora, cuando los nuevos vectores de base no son ortogonal, luego para hacer el cambio de uno
+
+61
+00:04:01.190 --> 00:04:04.748
+base a otro, no seremos solo capaz de usar el producto de puntos más.
+
+62
+00:04:04.748 --> 00:04:09.540
+Tendremos que usar matrices en su lugar, que nos encontraremos en el siguiente módulo.
+
+63
+00:04:09.540 --> 00:04:13.275
+Esa es la definición formal de lo que queremos decir con una base y
+
+64
+00:04:13.275 --> 00:04:14.896
+por independencia lineal.
+
+65
+00:04:14.896 --> 00:04:18.458
+[MÚSICA]
